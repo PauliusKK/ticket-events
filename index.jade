@@ -259,12 +259,32 @@ body
             img(src="images/tickets-6.jpg", alt="Messi")
 
 
-
-    .row
+    // Sports Events with Pictures
+    .row.small-up-1.medium-up-3.large-up-5
         +sports-event("images/sports-1.jpg", "Lakers", "BMO Harris Bank Center", "L.A LAKERS VS HEAT", "SEE TICKET")
 
+        +sports-event("images/sports-2.jpg", "Lakers", "Lisabon, Portugal", "Portugal vs Serbia EUR16", "SEE TICKET")
+
+        +sports-event("images/sports-3.jpg", "Lakers", "Peoria Civic Center", "UEFA Finals", "SEE TICKET")
+
+        +sports-event("images/sports-4.jpg", "Lakers", "U.S. Cellular Field", "2015 Ski Jumping", "SEE TICKET")
+
+        +sports-event("images/sports-5.jpg", "Lakers", "BMO Harris Bank Center", "Rugby Finals 2016", "SEE TICKET")
 
 
+    // RECOMMENDED FOR YOU
+    .row
+
+        // Navigation
+        .column.small-12
+
+            // Left Side Text
+            ul.menu.float-left
+                li: strong RECOMMENDED FOR YOU
+
+            // Right Side Menu
+            ul.menu.float-right
+                li View All
 
 
 

@@ -13,8 +13,9 @@ mixin sports-event-label(day, month, heading, stadium, button_text)
             a.tiny.button(href="") #{button_text}
 
 mixin sports-event(src, alt, stadium, heading, button_text)
-    .sport-event
-        img(src=src, alt=alt)
-        h6 #{stadium}
-        h5 #{heading}
-        a.tiny.button(href="") #{button_text}
+    .column
+        .sport-event
+            img(src=src, alt=alt)
+            h6 #{stadium}
+            h5 #{heading}
+            a.tiny.button(href="") #{button_text}
