@@ -1,4 +1,4 @@
-mixin sports-event(day, month, heading, description, button_text)
+mixin sports-event-label(day, month, heading, stadium, button_text)
     .event.column.large-12
         .column.large-2
             ul.menu
@@ -7,7 +7,14 @@ mixin sports-event(day, month, heading, description, button_text)
 
         .column.large-8
             h6: strong #{heading}
-            h6 #{description}
+            h6 #{stadium}
 
         .column.large-2
             a.tiny.button(href="") #{button_text}
+
+mixin sports-event(src, alt, stadium, heading, button_text)
+    .sport-event
+        img(src=src, alt=alt)
+        h6 #{stadium}
+        h5 #{heading}
+        a.tiny.button(href="") #{button_text}

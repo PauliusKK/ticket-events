@@ -22,10 +22,13 @@ body
             .column.small-6
                 .float-right
                     ul.inline-list
+
+                        // Location information
                         li
                             i.fi-marker
                             button.dropdown.button Chicagoland & Northern IL
 
+                        // Account information
                         li
                             i.fi-torso
                             button.dropdown.button My Account
@@ -40,6 +43,8 @@ body
 
             // Search Input
             .column.small-7
+
+                // Category select
                 .column.small-4
                     label
                         select
@@ -47,6 +52,7 @@ body
                             option(value="Option1") Option1
                             option(value="Option2") Option2
 
+                // Search form
                 .column.small-8
                     label
                         input(type="text", placeholder="Enter Artist , Team , or Venue ")
@@ -54,9 +60,12 @@ body
             // Shopping Cart
             .column.small-3
                 .column.small-2
+
+                    // Shopping Cart ICON
                     .cart
                         i.fi-shopping-cart.size-24
 
+                // Shopping cart information
                 .column.small-10
                     h4 Shopping Cart
                     p 3 Item (s) - $578.14
@@ -166,11 +175,11 @@ body
         // Tickets START
         .column.small-12.large-3
             .ticket-full-image-box
-                img(src="", alt="Omar Linx")
+                img(src="images/tickets-1.jpg", alt="Omar Linx")
 
         .column.small-12.large-3
             .ticket-box
-                img(src="", alt="Dirty South")
+                img(src="images/tickets-2.jpg", alt="Dirty South")
                 h5 Presented by Blueprint
                 p DIRTY SOUTH : #STEREO
                      small NEW!
@@ -179,7 +188,7 @@ body
 
         .column.small-12.large-3
             .ticket-box
-                img(src="", alt="PROBLEM")
+                img(src="images/tickets-3.jpg", alt="PROBLEM")
                 h5 Presented by BlueprintLIVE
                 p Problem
                      small HOT!
@@ -188,7 +197,7 @@ body
 
         .column.small-12.large-3
             .ticket-box
-                img(src="", alt="GRIZ")
+                img(src="images/tickets-4.jpg", alt="GRIZ")
                 h5 Presented by Blueprint & Live Nation
                 p GRIZ :: SAY IT LOUD TOUR
 
@@ -216,28 +225,43 @@ body
                 li Formula 1
 
 
-
+    // SPORTS EVENTS
     .row
 
+        // Close Button
         .column.small-12.large-7
             .primary.callout(data-closable)
                 p Recommender Sport Evenets past 5 Days
                 button.close-button(aria-label="Dismiss alert" type="button" data-close)
                     span(aria-hidden="true") &times;
 
-            +sports-event("14", "April", "Neil Diamond World Tour 2015", "United Center", "SEE TICKET")
+            // Events START
 
-            +sports-event("21", "April", "Chicago White Sox vs. Cleveland Indians", "U.S. Cellular Field", "SEE TICKET")
+            +sports-event-label("14", "April", "Neil Diamond World Tour 2015", "United Center", "SEE TICKET")
 
-            +sports-event("26", "April", "Chicago Bulls v. TBD - Round 1 Home Game D", "United Center", "SEE TICKET")
+            +sports-event-label("21", "April", "Chicago White Sox vs. Cleveland Indians", "U.S. Cellular Field", "SEE TICKET")
 
-            +sports-event("27", "April", "Bank of America Theatre", "U.S. Cellular Field", "SEE TICKET")
+            +sports-event-label("26", "April", "Chicago Bulls v. TBD - Round 1 Home Game D", "United Center", "SEE TICKET")
 
-            +sports-event("29", "April", "Shania Twain Rock This Country Tour", "Allstate Arena", "SEE TICKET")
+            +sports-event-label("27", "April", "Bank of America Theatre", "U.S. Cellular Field", "SEE TICKET")
 
-            +sports-event("30", "April", "One Direction: On The Road Again Tour 2015", "Soldier Field", "SEE TICKET")
+            +sports-event-label("29", "April", "Shania Twain Rock This Country Tour", "Allstate Arena", "SEE TICKET")
 
+            +sports-event-label("30", "April", "One Direction: On The Road Again Tour 2015", "Soldier Field", "SEE TICKET")
+
+            // Events END
+
+
+        // Right Side Images
         .column.small-12.large-5
+            img(src="images/tickets-5.jpg", alt="Rugby")
+
+            img(src="images/tickets-6.jpg", alt="Messi")
+
+
+
+    .row
+        +sports-event("images/sports-1.jpg", "Lakers", "BMO Harris Bank Center", "L.A LAKERS VS HEAT", "SEE TICKET")
 
 
 
