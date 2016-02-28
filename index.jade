@@ -1,0 +1,256 @@
+doctype html
+html(lang="en")
+    head
+        title Ticket Event
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css")
+        link(rel="stylesheet", href="style/style.css")
+        include mixins
+
+body
+
+    header
+        .row.bg-gray
+
+            // Header text
+            .column.small-6
+                p.float-left <strong>Hello !</strong> Update your list of favorites and never miss an event!
+
+            // Location and account information
+            .column.small-6
+                .float-right
+                    ul.inline-list
+                        li
+                            i.fi-marker
+                            button.dropdown.button Chicagoland & Northern IL
+
+                        li
+                            i.fi-torso
+                            button.dropdown.button My Account
+
+
+        // Logo, Search, Shopping Cart
+        .row
+
+            // Logo
+            .column.small-2
+                h1.logo Ticket
+
+            // Search Input
+            .column.small-7
+                .column.small-4
+                    label
+                        select
+                            option(value="All Categories") All Categories
+                            option(value="Option1") Option1
+                            option(value="Option2") Option2
+
+                .column.small-8
+                    label
+                        input(type="text", placeholder="Enter Artist , Team , or Venue ")
+
+            // Shopping Cart
+            .column.small-3
+                .column.small-2
+                    .cart
+                        i.fi-shopping-cart.size-24
+
+                .column.small-10
+                    h4 Shopping Cart
+                    p 3 Item (s) - $578.14
+
+
+
+        // Navigation
+        .row
+
+            .column.small-12
+                ul.dropdown.menu(data-dropdown-menu)
+                    li
+                        a.fi-list(href="")  Categories
+                    li: a(href="") Home
+                    li.has-submenu
+                        a(href="") Tickets
+                        ul.submenu.menu.vertical(data-submenu)
+                            li: a(href="") Item 1A
+                            li: a(href="") Item 1A
+                            li: a(href="") Item 1A
+                    li.has-submenu
+                        a(href="") Events
+                        ul.submenu.menu.vertical(data-submenu)
+                            li: a(href="") Item 1A
+                            li: a(href="") Item 1A
+                            li: a(href="") Item 1A
+                    li: a(href="") Special Offers
+                    li: a(href="") Contact Us
+                    li Arrow Right
+                    li Facebook
+                    li Twitter
+                    li GooglePlus
+                    li LinkedIn
+
+
+    // Search
+    .row
+
+        // Header text
+        .column.small-12
+            ul.menu
+                li: strong Shop for Events
+                li Line
+                li Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+
+            // Progress Bar
+            .progress(role="progressbar", tabindex="0", aria-valuenow="10", aria-veluemin="0", aria-valuemax="100")
+                .progress-meter(style="width: 10%")
+
+        // Select's START
+        .column.small-6
+            label.custom-select Select Category
+                select
+                    option Option 1
+                    option Option 2
+                    option Option 3
+
+        .column.small-6
+            label.custom-select Sub Category
+                select
+                    option Option 1
+                    option Option 2
+                    option Option 3
+
+        .column.small-6
+            label.custom-select From
+                select
+                    option Option 1
+                    option Option 2
+                    option Option 3
+
+        .column.small-6
+            label.custom-select To
+                select
+                    option Option 1
+                    option Option 2
+                    option Option 3
+
+        .column.small-6
+            label.custom-select Town
+                select
+                    option Option 1
+                    option Option 2
+                    option Option 3
+
+        // Select's END
+
+
+    // HOT TICKETS
+    .row
+
+        // Navigation
+        .column.small-12
+
+            // Left Side Text
+            ul.menu.float-left
+                li: strong HOT TICKETS
+
+            // Right Side Menu
+            ul.menu.float-right
+                li Family
+                li Sport
+                li Music
+                li Art
+                li Food
+
+        // Tickets START
+        .column.small-12.large-3
+            .ticket-full-image-box
+                img(src="", alt="Omar Linx")
+
+        .column.small-12.large-3
+            .ticket-box
+                img(src="", alt="Dirty South")
+                h5 Presented by Blueprint
+                p DIRTY SOUTH : #STEREO
+                     small NEW!
+
+                a.tiny.button(href="") SEE TICKET
+
+        .column.small-12.large-3
+            .ticket-box
+                img(src="", alt="PROBLEM")
+                h5 Presented by BlueprintLIVE
+                p Problem
+                     small HOT!
+
+                a.tiny.button(href="") SEE TICKET
+
+        .column.small-12.large-3
+            .ticket-box
+                img(src="", alt="GRIZ")
+                h5 Presented by Blueprint & Live Nation
+                p GRIZ :: SAY IT LOUD TOUR
+
+                a.tiny.button(href="") SEE TICKET
+
+        // Tickets END
+
+
+    // SPORTS
+    .row
+
+        // Navigation
+        .column.small-12
+
+            // Left Side Text
+            ul.menu.float-left
+                li: strong SPORTS
+
+            // Right Side Menu
+            ul.menu.float-right
+                li All
+                li Basketball
+                li Tennis
+                li Rugby
+                li Formula 1
+
+
+
+    .row
+
+        .column.small-12.large-7
+            .primary.callout(data-closable)
+                p Recommender Sport Evenets past 5 Days
+                button.close-button(aria-label="Dismiss alert" type="button" data-close)
+                    span(aria-hidden="true") &times;
+
+            +sports-event("14", "April", "Neil Diamond World Tour 2015", "United Center", "SEE TICKET")
+
+            +sports-event("21", "April", "Chicago White Sox vs. Cleveland Indians", "U.S. Cellular Field", "SEE TICKET")
+
+            +sports-event("26", "April", "Chicago Bulls v. TBD - Round 1 Home Game D", "United Center", "SEE TICKET")
+
+            +sports-event("27", "April", "Bank of America Theatre", "U.S. Cellular Field", "SEE TICKET")
+
+            +sports-event("29", "April", "Shania Twain Rock This Country Tour", "Allstate Arena", "SEE TICKET")
+
+            +sports-event("30", "April", "One Direction: On The Road Again Tour 2015", "Soldier Field", "SEE TICKET")
+
+        .column.small-12.large-5
+
+
+
+
+
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+    script(src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js")
+    script(src="js.js")
+
+// http://red-team-design.com/making-html-dropdowns-not-suck/
+
+
+
+
+

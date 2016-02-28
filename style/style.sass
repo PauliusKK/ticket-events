@@ -1,0 +1,54 @@
+$bg-gray: #f6f6f6
+
+
+.size-12
+    font-size: 12px
+.size-14
+    font-size: 14px
+.size-16
+    font-size: 16px
+.size-18
+    font-size: 18px
+.size-21
+    font-size: 21px
+.size-24
+    font-size: 24px
+.size-36
+    font-size: 36px
+.size-48
+    font-size: 48px
+.size-60
+    font-size: 60px
+.size-72
+    font-size: 72px
+
+
+label.custom-select
+  position: relative
+
+.custom-select
+  select
+    margin: 0
+    // remove focus ring from Webkit
+    line-height: 1.2
+    background: #666
+    color: white
+    border: 0
+  &:after
+    content: "▼"
+    position: absolute
+    top: 1
+    right: 0
+    bottom: 0
+    font-size: 60%
+    line-height: 39px
+    border-left: solid 1px black
+    padding: 0 15px
+    background: #777
+    color: white
+    pointer-events: none
+
+// Select arrow styling
+
+.no-pointer-events .custom-select:after
+  content: none

@@ -1,0 +1,13 @@
+mixin sports-event(day, month, heading, description, button_text)
+    .event.column.large-12
+        .column.large-2
+            ul.menu
+                li: i.fi-calendar
+                li: strong #{day}<br>#{month}
+
+        .column.large-8
+            h6: strong #{heading}
+            h6 #{description}
+
+        .column.large-2
+            a.tiny.button(href="") #{button_text}
