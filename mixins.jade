@@ -86,3 +86,16 @@ mixin information-tab(divClass, src, alt, heading, description)
         .float-right
             h5 #{heading}
             h6 #{description}
+
+mixin photo-information(heading, description, aText)
+    h2 #{heading}
+    h4 #{description}
+
+    .rating
+        span ☆
+        span ☆
+        span ☆
+        span ☆
+        span ☆
+
+    a(href="") #{aText}
