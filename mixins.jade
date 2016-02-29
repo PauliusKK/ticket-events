@@ -67,3 +67,22 @@ mixin ticket(src, alt, heading, description, ButtonText)
             p #{description}
 
             a.tiny.button(href="") #{ButtonText}
+
+mixin social-media(src, alt, socialHeader, heading, about, description, ButtonText)
+    .column.large-3
+        img(src=src, alt=alt)
+        h5(class="#{socialHeader}") #{heading}
+        h6 #{about}
+        p #{description}
+
+        a.tiny.button(href="") #{ButtonText}
+
+mixin information-tab(divClass, src, alt, heading, description)
+    .column.large-3
+        .float-left
+            div(class="#{divClass}")
+                img(src=src, alt=alt)
+
+        .float-right
+            h5 #{heading}
+            h6 #{description}
