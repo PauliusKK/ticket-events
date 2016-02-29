@@ -158,75 +158,25 @@ body
     .row
 
         // Navigation
-        .column.small-12
+        +menu("HOT TICKETS", "Family", "Sport", "Music", "Art", "Food")
 
-            // Left Side Text
-            ul.menu.float-left
-                li: strong HOT TICKETS
 
-            // Right Side Menu
-            ul.menu.float-right
-                li Family
-                li Sport
-                li Music
-                li Art
-                li Food
+        +ticket-full-image("images/tickets-1.jpg", "Omar Linx")
 
-        // Tickets START
-        .column.small-12.large-3
-            .ticket-full-image-box
-                img(src="images/tickets-1.jpg", alt="Omar Linx")
+        +ticket-small-text("images/tickets-2.jpg", "Dirty South", "Presented by Blueprint", "DIRTY SOUTH : #STEREO", "NEW!", "SEE TICKET")
 
-        .column.small-12.large-3
-            .ticket-box
-                img(src="images/tickets-2.jpg", alt="Dirty South")
-                h5 Presented by Blueprint
-                p DIRTY SOUTH : #STEREO
-                     small NEW!
+        +ticket-small-text("images/tickets-3.jpg", "PROBLEM", "Presented by BlueprintLIVE", "Problem", "HOT!", "SEE TICKET")
 
-                a.tiny.button(href="") SEE TICKET
+        +ticket("images/tickets-4.jpg", "GRIZ", "Presented by Blueprint & Live Nation", "GRIZ :: SAY IT LOUD TOUR", "SEE TICKET")
 
-        .column.small-12.large-3
-            .ticket-box
-                img(src="images/tickets-3.jpg", alt="PROBLEM")
-                h5 Presented by BlueprintLIVE
-                p Problem
-                     small HOT!
-
-                a.tiny.button(href="") SEE TICKET
-
-        .column.small-12.large-3
-            .ticket-box
-                img(src="images/tickets-4.jpg", alt="GRIZ")
-                h5 Presented by Blueprint & Live Nation
-                p GRIZ :: SAY IT LOUD TOUR
-
-                a.tiny.button(href="") SEE TICKET
-
-        // Tickets END
 
 
     // SPORTS
     .row
 
         // Navigation
-        .column.small-12
+        +menu("SPORTS", "All", "Basketball", "Tennis", "Rugby", "Formula 1")
 
-            // Left Side Text
-            ul.menu.float-left
-                li: strong SPORTS
-
-            // Right Side Menu
-            ul.menu.float-right
-                li All
-                li Basketball
-                li Tennis
-                li Rugby
-                li Formula 1
-
-
-    // SPORTS EVENTS
-    .row
 
         // Close Button
         .column.small-12.large-7
@@ -285,6 +235,68 @@ body
             // Right Side Menu
             ul.menu.float-right
                 li View All
+
+
+        // Events
+        +recommended-event("images/banner-1.png", "Chicago Bulls", "Chicago Bulls")
+
+        +recommended-event("images/banner-2.png", "Chicago Backhawks", "Chicago Backhawks")
+
+        +recommended-event("images/banner-3.png", "Chicago Wolves", "Chicago Wolves")
+
+        +recommended-event("images/banner-4.png", "CONCACAF Gold Cup", "CONCACAF Gold Cup")
+
+        +recommended-event("images/banner-1.png", "Chicago Bulls", "Chicago Bulls")
+
+        +recommended-event("images/banner-2.png", "Chicago Bulls", "Chicago Backhawks")
+
+
+    // MUSIC
+    .row
+
+        // Navigation
+        +menu("MUSIC", "Live", "Rock", "Transe", "Techno", "National")
+
+        // Events
+        +ticket-small-text("images/music-1.jpg", "Black Milk", "Presented by Blueprint", "Black Milk", "NEW!", "SEE TICKET")
+
+        +ticket-small-text("images/music-2.jpg", "Ten Walls", "Presented by Fortune Sound", "Ten Walls (Live)", "HOT!", "SEE TICKET")
+
+        +ticket("images/music-3.jpg", "Monstercat", "Presented by Seasons, Monstercat", "MONSTERCAT SHOWCASE", "SEE TICKET")
+
+        +ticket-full-image("images/music-4.jpg", "Firebeatz")
+
+
+        // Left Side Images
+        .column.small-12.large-5
+            img(src="images/music-5.jpg", alt="Hardwell")
+
+            img(src="images/music-6.jpg", alt="Feddle Le Grand Tour")
+
+
+        // Close Button
+        .column.small-12.large-7
+            .primary.callout(data-closable)
+                p Recommender Sport Evenets past 5 Days
+                button.close-button(aria-label="Dismiss alert" type="button" data-close)
+                    span(aria-hidden="true") &times;
+
+            // Events START
+
+            +sports-event-label("14", "April", "Neil Diamond World Tour 2015", "United Center", "SEE TICKET")
+
+            +sports-event-label("21", "April", "Chicago White Sox vs. Cleveland Indians", "U.S. Cellular Field", "SEE TICKET")
+
+            +sports-event-label("26", "April", "Chicago Bulls v. TBD - Round 1 Home Game D", "United Center", "SEE TICKET")
+
+            +sports-event-label("27", "April", "Bank of America Theatre", "U.S. Cellular Field", "SEE TICKET")
+
+            +sports-event-label("29", "April", "Shania Twain Rock This Country Tour", "Allstate Arena", "SEE TICKET")
+
+            +sports-event-label("30", "April", "One Direction: On The Road Again Tour 2015", "Soldier Field", "SEE TICKET")
+
+            // Events END
+
 
 
 

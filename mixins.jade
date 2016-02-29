@@ -1,3 +1,15 @@
+mixin menu(LeftSideText, FirstLabel, SecondLabel, ThirdLabel, FourthLabel, FifthLabel)
+        .column.small-12
+            ul.menu.float-left
+                li: strong #{LeftSideText}
+
+            ul.menu.float-right
+                li #{FirstLabel}
+                li #{SecondLabel}
+                li #{ThirdLabel}
+                li #{FourthLabel}
+                li #{FifthLabel}
+
 mixin sports-event-label(day, month, heading, stadium, button_text)
     .event.column.large-12
         .column.large-2
@@ -19,3 +31,39 @@ mixin sports-event(src, alt, stadium, heading, button_text)
             h6 #{stadium}
             h5 #{heading}
             a.tiny.button(href="") #{button_text}
+
+mixin recommended-event(src, alt, heading)
+    .column.large-2
+        img(src=src, alt=alt)
+        h6 #{heading}
+
+        .rating
+            span ☆
+            span ☆
+            span ☆
+            span ☆
+            span ☆
+
+mixin ticket-full-image(src, alt)
+    .column.large-3
+        .ticket-full-image-box
+            img(src=src, alt=alt)
+
+mixin ticket-small-text(src, alt, heading, description, smallText, ButtonText)
+    .column.large-3
+        .ticket-box
+            img(src=src, alt=alt)
+            h5 #{heading}
+            p #{description}
+                 small #{smallText}
+
+            a.tiny.button(href="") #{ButtonText}
+
+mixin ticket(src, alt, heading, description, ButtonText)
+    .column.large-3
+        .ticket-box
+            img(src=src, alt=alt)
+            h5 #{heading}
+            p #{description}
+
+            a.tiny.button(href="") #{ButtonText}
