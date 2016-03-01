@@ -265,6 +265,59 @@ h1.logo {
   color: white;
 }
 
+.sports {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+
+.sport-event {
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  max-height: 415px;
+}
+
+.sport-event h6 {
+  color: #808080;
+  font-size: 13px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.sport-event p {
+  font-size: 15px;
+  color: #303030;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: -5px;
+}
+
+.sport-event p small.text-new {
+  border-radius: 5px;
+  border: 1px solid #1e84cc;
+  color: #1e84cc;
+  padding: 3px 4px;
+  margin-left: 5px;
+}
+
+.sport-event p small.text-hot {
+  border-radius: 5px;
+  border: 1px solid #ef8742;
+  color: #ef8742;
+  padding: 3px 4px;
+  margin-left: 5px;
+}
+
+.sport-button {
+  background-color: #f6f6f6;
+  color: #808080;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.7em 0.9em;
+}
+
 .row-full {
   width: 100%;
   margin-left: auto;

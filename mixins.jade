@@ -38,14 +38,28 @@ mixin sports-event-label(day, month, heading, stadium, button_text)
 mixin sports-event(src, alt, stadium, heading, button_text)
 
     // Sport event tab
-    .column
+    .column.sports
 
         // Image, text and button
         .sport-event
             img(src=src, alt=alt)
             h6 #{stadium}
-            h5 #{heading}
-            a.tiny.button(href="") #{button_text}
+            p #{heading}
+            a.tiny.button.sport-button(href="") #{button_text}
+
+mixin sports-event-small-text(src, alt, stadium, heading, className, smallText, button_text)
+
+    // Sport event tab
+    .column.sports
+
+        // Image, text and button
+        .sport-event
+            img(src=src, alt=alt)
+            h6 #{stadium}
+            p #{heading}
+                small(class="#{className}") #{smallText}
+
+            a.tiny.button.sport-button(href="") #{button_text}
 
 mixin recommended-event(src, alt, heading)
 

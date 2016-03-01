@@ -154,11 +154,37 @@ body
 
                 li.image-with-text
                         img(src="images/slider-2.jpg", alt="The Game")
-                        +photo-information("The Game Tour", "December 2015", "Get it Now!")
+
+                        // Image information, going on the image
+                        .image-text
+                            h2 #{heading}
+                            h4 #{description}
+
+                            .rating
+                                span ☆
+                                span ☆
+                                span ☆
+                                span ☆
+                                span ☆
+
+                            a(href="") #{aText}
 
                   .image-with-text.float-left
                         img(src="images/slider-3.jpg", alt="Miami vs Cleavlend CL")
-                        +photo-information("Miami vs Cleavlend CL", "Medison Square", "Get it Now!")
+
+                        // Image information, going on the image
+                        .image-text
+                            h2 #{heading}
+                            h4 #{description}
+
+                            .rating
+                                span ☆
+                                span ☆
+                                span ☆
+                                span ☆
+                                span ☆
+
+                            a(href="") #{aText}
 
     // Search
     .row
@@ -279,9 +305,9 @@ body
 
         +sports-event("images/sports-2.jpg", "Football", "Lisabon, Portugal", "Portugal vs Serbia EUR16", "SEE TICKET")
 
-        +sports-event("images/sports-3.jpg", "UEFA Finals", "Peoria Civic Center", "UEFA Finals", "SEE TICKET")
+        +sports-event-small-text("images/sports-3.jpg", "UEFA Finals", "Peoria Civic Center", "UEFA Finals", "text-hot", "HOT!", "SEE TICKET")
 
-        +sports-event("images/sports-4.jpg", "Ski Jumping", "U.S. Cellular Field", "2015 Ski Jumping", "SEE TICKET")
+        +sports-event-small-text("images/sports-4.jpg", "Ski Jumping", "U.S. Cellular Field", "2015 Ski Jumping", "text-new", "NEW!", "SEE TICKET")
 
         +sports-event("images/sports-5.jpg", "Rugby Finals", "BMO Harris Bank Center", "Rugby Finals 2016", "SEE TICKET")
 
