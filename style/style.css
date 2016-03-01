@@ -372,6 +372,26 @@ h1.logo {
   padding: 0.7em 0.9em;
 }
 
+.event-label-button {
+  border: 2px solid #95c3e3;
+  background-color: #ddedf7;
+  max-height: 50px;
+}
+
+.event-label-button p {
+  color: #878787;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.event-label-button button {
+  margin-top: -2px;
+}
+
+.callout {
+  padding: 10px;
+}
+
 .row-full {
   width: 100%;
   margin-left: auto;
