@@ -4,6 +4,7 @@ $color-progressbar: #008cff
 $color-borders: #dcdcdc
 $color-dropdown: #cccccc
 $color-ticket-border: #e6e6e6
+$color-orange: #ef8742
 
 $text-header: #919191
 $text-searchbox: #b7b7b7
@@ -11,6 +12,7 @@ $text-shopping-info: #bababa
 $text-menu-left: #303030
 $text-menu-right: #989898
 $text-ticket-description: #808080
+$text-image-gray: #7e7e7e
 
 
 @import "font-sizes"
@@ -18,31 +20,8 @@ $text-ticket-description: #808080
 @import "header"
 @import "searchbox"
 @import "tickets"
-
-
-
-// Menu navigation START
-.menu-navigation
-
-    .float-left li
-        font-size: 21px
-        color: $text-menu-left
-        text-transform: uppercase
-
-    .float-right li
-        font-size: 15px
-        color: $text-menu-right
-        text-transform: capitalize
-        padding: 0 10px
-
-    .float-right li:before
-        content: "•"
-        padding: 0 5px
-
-    .float-right li:first-child
-        color: $text-menu-left
-        font-weight: bold
-// Menu navigation END
+@import "menu-navigation"
+@import "image-text"
 
 
 

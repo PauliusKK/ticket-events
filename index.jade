@@ -146,16 +146,19 @@ body
                 li GooglePlus
                 li LinkedIn
 
-        .column.large-10
-            .float-left
-                img(src="images/slider-1.jpg", alt="Dillon Francis")
-                +photo-information("Dillon Francis", "UNITED CENTER, CHICAGO, IL", "Get it Now!")
+        .column.large-10.main-pictures
+            ul.menu
+                li.image-with-text.float-left
+                    img(src="images/slider-1.jpg", alt="Dillon Francis")
+                    +photo-information-main("Dillon Francis", "UNITED CENTER, CHICAGO, IL", "Get it Now!")
 
-            img(src="images/slider-2.jpg", alt="The Game")
-            +photo-information("The Game Tour", "December 2015", "Get it Now!")
+                li.image-with-text
+                        img(src="images/slider-2.jpg", alt="The Game")
+                        +photo-information("The Game Tour", "December 2015", "Get it Now!")
 
-            img(src="images/slider-3.jpg", alt="Miami vs Cleavlend CL")
-            +photo-information("Miami vs Cleavlend CL", "Medison Square", "Get it Now!")
+                  .image-with-text.float-left
+                        img(src="images/slider-3.jpg", alt="Miami vs Cleavlend CL")
+                        +photo-information("Miami vs Cleavlend CL", "Medison Square", "Get it Now!")
 
     // Search
     .row
@@ -219,9 +222,9 @@ body
 
         +ticket-full-image("images/tickets-1.jpg", "Omar Linx")
 
-        +ticket-small-text("images/tickets-2.jpg", "Dirty South", "Presented by Blueprint", "DIRTY SOUTH : #STEREO", "NEW!", "SEE TICKET")
+        +ticket-small-text("images/tickets-2.jpg", "Dirty South", "Presented by Blueprint", "DIRTY SOUTH : #STEREO", "text-new", "NEW!", "SEE TICKET")
 
-        +ticket-small-text("images/tickets-3.jpg", "PROBLEM", "Presented by BlueprintLIVE", "Problem", "HOT!", "SEE TICKET")
+        +ticket-small-text("images/tickets-3.jpg", "PROBLEM", "Presented by BlueprintLIVE", "Problem", "text-hot", "HOT!", "SEE TICKET")
 
         +ticket("images/tickets-4.jpg", "GRIZ", "Presented by Blueprint & Live Nation", "GRIZ :: SAY IT LOUD TOUR", "SEE TICKET")
 
@@ -260,11 +263,14 @@ body
 
         // Right Side Images
         .column.small-12.large-5
-            img(src="images/tickets-5.jpg", alt="Rugby")
-            +photo-information("L.A Lakers vs Chicago Bulls!", "BMO Harris Bank Conter", "Get It Now!")
 
-            img(src="images/tickets-6.jpg", alt="Messi")
-            +photo-information("Barcelona vs Real Madrid Tickets", "Kamp Nou", "Get It Now!")
+            .image-with-text
+                img(src="images/tickets-5.jpg", alt="Rugby")
+                +photo-information("L.A Lakers vs Chicago Bulls!", "BMO Harris Bank Conter", "Get It Now!")
+
+            .image-with-text
+                img(src="images/tickets-6.jpg", alt="Messi")
+                +photo-information("Barcelona vs Real Madrid Tickets", "Kamp Nou", "Get It Now!")
 
 
     // Sports Events with Pictures
@@ -316,9 +322,9 @@ body
         +menu("MUSIC", "Live", "Rock", "Transe", "Techno", "National")
 
         // Events
-        +ticket-small-text("images/music-1.jpg", "Black Milk", "Presented by Blueprint", "Black Milk", "NEW!", "SEE TICKET")
+        +ticket-small-text("images/music-1.jpg", "Black Milk", "Presented by Blueprint", "Black Milk", "text-new", "NEW!", "SEE TICKET")
 
-        +ticket-small-text("images/music-2.jpg", "Ten Walls", "Presented by Fortune Sound", "Ten Walls (Live)", "HOT!", "SEE TICKET")
+        +ticket-small-text("images/music-2.jpg", "Ten Walls", "Presented by Fortune Sound", "Ten Walls (Live)", "text-hot", "HOT!", "SEE TICKET")
 
         +ticket("images/music-3.jpg", "Monstercat", "Presented by Seasons, Monstercat", "MONSTERCAT SHOWCASE", "SEE TICKET")
 
@@ -327,11 +333,14 @@ body
 
         // Left Side Images
         .column.small-12.large-5
-            img(src="images/music-5.jpg", alt="Hardwell")
-            +photo-information("Hardwell TOP 10 DJ Tour 2015", "BMO Harris Bank Center", "Get It Now!")
 
-            img(src="images/music-6.jpg", alt="Feddle Le Grand Tour")
-            +photo-information("Feddle Le Grand Tour Vegas", "Belagio", "Get It Now!")
+            .image-with-text
+                img(src="images/music-5.jpg", alt="Hardwell")
+                +photo-information("Hardwell TOP 10 DJ Tour 2015", "BMO Harris Bank Center", "Get It Now!")
+
+            .image-with-text
+                img(src="images/music-6.jpg", alt="Feddle Le Grand Tour")
+                +photo-information("Feddle Le Grand Tour Vegas", "Belagio", "Get It Now!")
 
 
         // Close Button

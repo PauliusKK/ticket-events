@@ -71,7 +71,7 @@ mixin ticket-full-image(src, alt)
         .ticket-full-image-box
             img(src=src, alt=alt)
 
-mixin ticket-small-text(src, alt, heading, description, smallText, ButtonText)
+mixin ticket-small-text(src, alt, heading, description, className, smallText, ButtonText)
 
     // Hot ticket event with small text in description
     .column.large-3
@@ -81,7 +81,7 @@ mixin ticket-small-text(src, alt, heading, description, smallText, ButtonText)
             img(src=src, alt=alt)
             h5 #{heading}
             p #{description}
-                 small #{smallText}
+                 small(class="#{className}") #{smallText}
 
             a.tiny.button.ticket-button(href="") #{ButtonText}
 
@@ -127,14 +127,31 @@ mixin information-tab(divClass, src, alt, heading, description)
 mixin photo-information(heading, description, aText)
 
     // Image information, going on the image
-    h3 #{heading}
-    h4 #{description}
+    .image-text
+        h3 #{heading}
+        h4 #{description}
 
-    .rating
-        span ☆
-        span ☆
-        span ☆
-        span ☆
-        span ☆
+        .rating
+            span ☆
+            span ☆
+            span ☆
+            span ☆
+            span ☆
 
-    a(href="") #{aText}
+        a(href="") #{aText}
+
+mixin photo-information-main(heading, description, aText)
+
+    // Image information, going on the image
+    .image-text-main
+        h2 #{heading}
+        h4 #{description}
+
+        .rating
+            span ☆
+            span ☆
+            span ☆
+            span ☆
+            span ☆
+
+        a(href="") #{aText}
