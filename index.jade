@@ -12,7 +12,7 @@ html(lang="en")
 body
 
     header
-        .row.bg-gray
+        .row.bg-gray.row-full
 
             // Header text
             .column.small-6
@@ -21,142 +21,142 @@ body
             // Location and account information
             .column.small-6
                 .float-right
-                    ul.inline-list
+                    ul.menu
 
                         // Location information
                         li
                             i.fi-marker
-                            button.dropdown.button Chicagoland & Northern IL
+                            button.dropdown.button.header-button Chicagoland & Northern IL
 
                         // Account information
                         li
                             i.fi-torso
-                            button.dropdown.button My Account
+                            button.dropdown.button.header-button My Account
 
 
-        // Logo, Search, Shopping Cart
-        .row
+    // Logo, Search, Shopping Cart
+    .row.searchbox
 
-            // Logo
+        // Logo
+        .column.small-2
+            h1.logo Ticket
+
+        // Search Input
+        .column.small-7.search-input
+
+            // Category select
+            .column.small-4
+                label
+                    select
+                        option(value="All Categories") All Categories
+                        option(value="Option1") Option1
+                        option(value="Option2") Option2
+
+            // Search form
+            .column.small-8
+                label
+                    input(type="text", placeholder="Enter Artist , Team , or Venue")
+
+        // Shopping Cart
+        .column.small-3.shopping-cart
             .column.small-2
-                h1.logo Ticket
 
-            // Search Input
-            .column.small-7
+                // Shopping Cart ICON
+                .cart
+                    i.fi-shopping-cart.size-24
 
-                // Category select
-                .column.small-4
-                    label
-                        select
-                            option(value="All Categories") All Categories
-                            option(value="Option1") Option1
-                            option(value="Option2") Option2
-
-                // Search form
-                .column.small-8
-                    label
-                        input(type="text", placeholder="Enter Artist , Team , or Venue ")
-
-            // Shopping Cart
-            .column.small-3
-                .column.small-2
-
-                    // Shopping Cart ICON
-                    .cart
-                        i.fi-shopping-cart.size-24
-
-                // Shopping cart information
-                .column.small-10
-                    h4 Shopping Cart
-                    p 3 Item (s) - $578.14
+            // Shopping cart information
+            .column.small-10
+                h4 Shopping Cart
+                p 3 Item (s) - $578.14
 
 
 
-        // Navigation
-        .row
+    // Navigation
+    .row
 
-            .column.large-2
-                h5: a.fi-list(href="") Categories
-                ul.menu.vertical
-                    li
-                        ul.menu
-                            li: i.fi-trash
-                            li: h6 Music
-                            li: i.fi-arrow-right
-                    li
-                        ul.menu
-                            li: i.fi-trash
-                            li: h6 Music
-                            li: i.fi-arrow-right
-                    li
-                        ul.menu
-                            li: i.fi-trash
-                            li: h6 Music
-                            li: i.fi-arrow-right
-                    li
-                        ul.menu
-                            li: i.fi-trash
-                            li: h6 Music
-                            li: i.fi-arrow-right
-                    li
-                        ul.menu
-                            li: i.fi-trash
-                            li: h6 Music
-                            li: i.fi-arrow-right
-                    li
-                        ul.menu
-                            li: i.fi-trash
-                            li: h6 Music
-                            li: i.fi-arrow-right
-                    li
-                        ul.menu
-                            li: i.fi-trash
-                            li: h6 Music
-                            li: i.fi-arrow-right
-                    li
-                        ul.menu
-                            li: i.fi-trash
-                            li: h6 Music
-                            li: i.fi-arrow-right
-                    li
-                        ul.menu
-                            li: i.fi-trash
-                            li: h6 Music
-                            li: i.fi-arrow-right
+        .column.large-2
+            h5: a.fi-list(href="") Categories
+            ul.menu.vertical
+                li
+                    ul.menu
+                        li: i.fi-trash
+                        li: h6 Music
+                        li: i.fi-arrow-right
+                li
+                    ul.menu
+                        li: i.fi-trash
+                        li: h6 Music
+                        li: i.fi-arrow-right
+                li
+                    ul.menu
+                        li: i.fi-trash
+                        li: h6 Music
+                        li: i.fi-arrow-right
+                li
+                    ul.menu
+                        li: i.fi-trash
+                        li: h6 Music
+                        li: i.fi-arrow-right
+                li
+                    ul.menu
+                        li: i.fi-trash
+                        li: h6 Music
+                        li: i.fi-arrow-right
+                li
+                    ul.menu
+                        li: i.fi-trash
+                        li: h6 Music
+                        li: i.fi-arrow-right
+                li
+                    ul.menu
+                        li: i.fi-trash
+                        li: h6 Music
+                        li: i.fi-arrow-right
+                li
+                    ul.menu
+                        li: i.fi-trash
+                        li: h6 Music
+                        li: i.fi-arrow-right
+                li
+                    ul.menu
+                        li: i.fi-trash
+                        li: h6 Music
+                        li: i.fi-arrow-right
 
-            .column.large-10
-                ul.dropdown.menu(data-dropdown-menu)
-                    li: a(href="") Home
-                    li.has-submenu
-                        a(href="") Tickets
-                        ul.submenu.menu.vertical(data-submenu)
-                            li: a(href="") Item 1A
-                            li: a(href="") Item 1A
-                            li: a(href="") Item 1A
-                    li.has-submenu
-                        a(href="") Events
-                        ul.submenu.menu.vertical(data-submenu)
-                            li: a(href="") Item 1A
-                            li: a(href="") Item 1A
-                            li: a(href="") Item 1A
-                    li: a(href="") Special Offers
-                    li: a(href="") Contact Us
-                    li Arrow Right
-                    li Facebook
-                    li Twitter
-                    li GooglePlus
-                    li LinkedIn
+        .column.large-10
+            ul.dropdown.menu(data-dropdown-menu)
+                li: a(href="") Home
+                li.has-submenu
+                    a(href="") Tickets
+                    ul.submenu.menu.vertical(data-submenu)
+                        li: a(href="") Item 1A
+                        li: a(href="") Item 1A
+                        li: a(href="") Item 1A
+                li.has-submenu
+                    a(href="") Events
+                    ul.submenu.menu.vertical(data-submenu)
+                        li: a(href="") Item 1A
+                        li: a(href="") Item 1A
+                        li: a(href="") Item 1A
+                li: a(href="") Special Offers
+                li: a(href="") Contact Us
+                li Arrow Right
+                li Facebook
+                li Twitter
+                li GooglePlus
+                li LinkedIn
 
-            .column.large-10
-                .float-left
-                    img(src="images/slider-1.jpg", alt="Dillon Francis")
-                    +photo-information("Dillon Francis", "UNITED CENTER, CHICAGO, IL", "Get it Now!")
+        .column.large-10
+            .float-left
+                img(src="images/slider-1.jpg", alt="Dillon Francis")
+                +photo-information("Dillon Francis", "UNITED CENTER, CHICAGO, IL", "Get it Now!")
 
-                img(src="images/slider-2.jpg", alt="The Game")
-                +photo-information("The Game Tour", "December 2015", "Get it Now!")
+            img(src="images/slider-2.jpg", alt="The Game")
+            +photo-information("The Game Tour", "December 2015", "Get it Now!")
 
-                img(src="images/slider-3.jpg", alt="Miami vs Cleavlend CL")
-                +photo-information("Miami vs Cleavlend CL", "Medison Square", "Get it Now!")
+            img(src="images/slider-3.jpg", alt="Miami vs Cleavlend CL")
+            +photo-information("Miami vs Cleavlend CL", "Medison Square", "Get it Now!")
 
     // Search
     .row

@@ -1,0 +1,29 @@
+label.custom-select
+  position: relative
+
+.custom-select
+  select
+    margin: 0
+    // remove focus ring from Webkit
+    line-height: 1.2
+    background: #666
+    color: white
+    border: 0
+  &:after
+    content: "▼"
+    position: absolute
+    top: 1
+    right: 0
+    bottom: 0
+    font-size: 60%
+    line-height: 39px
+    border-left: solid 1px black
+    padding: 0 15px
+    background: #777
+    color: white
+    pointer-events: none
+
+// Select arrow styling
+
+.no-pointer-events .custom-select:after
+  content: none

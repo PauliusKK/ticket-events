@@ -70,6 +70,83 @@ label.custom-select {
   content: none;
 }
 
+.bg-gray {
+  background-color: #f6f6f6;
+}
+
+header .column {
+  margin-top: 15px;
+}
+
+header .column p {
+  color: #919191;
+}
+
+.header-button {
+  background: none;
+  color: #919191;
+}
+
+.header-button:after {
+  border-color: #cccccc transparent transparent !important;
+}
+
+h1.logo {
+  background-image: url(../images/header-logo.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  text-indent: -10000px;
+  margin-top: 50px;
+}
+
+.search-input .column {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 40px;
+}
+
+.shopping-cart {
+  margin-top: 40px;
+}
+
+.shopping-cart h4 {
+  color: #1e84cc;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.shopping-cart p {
+  color: #bababa;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.cart {
+  width: 50px;
+  height: 50px;
+  background-color: #1e84cc;
+  border-radius: 100%;
+  position: relative;
+  margin-left: -15px;
+}
+
+.cart i.fi-shopping-cart {
+  font-size: 1.75em;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+}
+
+.row-full {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+}
+
 .rating {
   unicode-bidi: bidi-override;
   direction: rtl;
