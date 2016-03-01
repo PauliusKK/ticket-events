@@ -142,7 +142,7 @@ h1.logo {
 
 .ticket-box {
   border: 1px solid #e6e6e6;
-  max-height: 416.641px;
+  max-height: 416px;
 }
 
 .ticket-box h5 {
@@ -185,7 +185,8 @@ h1.logo {
   font-size: 12px !important;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 28.641px;
+  padding: 0.7em 0.9em;
 }
 
 .menu-navigation .float-left li {
@@ -312,6 +313,59 @@ h1.logo {
   color: #808080;
   border-radius: 5px;
   margin-left: 15px;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.7em 0.9em;
+}
+
+.event-label {
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  padding-right: 0.7rem;
+  max-height: 65px;
+}
+
+.event-label .description h6 {
+  margin-top: 10px;
+  color: #2c3e52;
+  font-size: 15px;
+}
+
+.event-label .description p {
+  color: #878787;
+  font-size: 15px;
+  margin-top: -5px;
+}
+
+.event-label .date {
+  color: #2c3e52;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.event-label .tab-button {
+  padding: 0;
+}
+
+.event-label .calendar ul {
+  margin-top: 5px;
+}
+
+.event-label .calendar ul li {
+  padding-left: 10px;
+}
+
+.event-label .calendar ul li:first-child {
+  padding-left: 0;
+}
+
+.event-button {
+  background-color: #f6f6f6;
+  color: #808080;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 15px;
   font-size: 12px !important;
   text-transform: uppercase;
   font-weight: bold;

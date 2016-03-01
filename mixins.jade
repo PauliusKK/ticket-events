@@ -18,22 +18,22 @@ mixin menu(LeftSideText, FirstLabel, SecondLabel, ThirdLabel, FourthLabel, Fifth
 mixin sports-event-label(day, month, heading, stadium, button_text)
 
     // Sports event label
-    .event.column.large-12
+    .event.column.large-12.event-label
 
         // Calendar icon and date
-        .column.large-2
+        .column.large-2.calendar
             ul.menu
-                li: i.fi-calendar
-                li: strong #{day}<br>#{month}
+                li: i.fi-calendar.size-36
+                li.date: strong #{day}<br>#{month}
 
         // Description
-        .column.large-8
+        .column.large-8.description
             h6: strong #{heading}
-            h6 #{stadium}
+            p #{stadium}
 
         // Button
-        .column.large-2
-            a.tiny.button(href="") #{button_text}
+        .column.large-2.tab-button
+            a.tiny.button.event-button(href="") #{button_text}
 
 mixin sports-event(src, alt, stadium, heading, button_text)
 
