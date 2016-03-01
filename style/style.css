@@ -140,6 +140,58 @@ h1.logo {
   transform: translateY(-50%);
 }
 
+.ticket-box {
+  border: 1px solid #e6e6e6;
+}
+
+.ticket-box h5 {
+  font-size: 13px;
+  color: #808080;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.ticket-box p {
+  font-size: 15px;
+  color: #303030;
+  font-weight: bold;
+  margin-top: -5px;
+  margin-left: 15px;
+}
+
+.ticket-button {
+  background-color: #f6f6f6;
+  color: #808080;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu-navigation .float-left li {
+  font-size: 21px;
+  color: #303030;
+  text-transform: uppercase;
+}
+
+.menu-navigation .float-right li {
+  font-size: 15px;
+  color: #989898;
+  text-transform: capitalize;
+  padding: 0 10px;
+}
+
+.menu-navigation .float-right li:before {
+  content: "•";
+  padding: 0 5px;
+}
+
+.menu-navigation .float-right li:first-child {
+  color: #303030;
+  font-weight: bold;
+}
+
 .row-full {
   width: 100%;
   margin-left: auto;

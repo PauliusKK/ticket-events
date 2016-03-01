@@ -1,8 +1,13 @@
 mixin menu(LeftSideText, FirstLabel, SecondLabel, ThirdLabel, FourthLabel, FifthLabel)
-        .column.small-12
+
+        // Navigation before events
+        .column.small-12.menu-navigation
+
+            // Left side text
             ul.menu.float-left
                 li: strong #{LeftSideText}
 
+            // Right side text
             ul.menu.float-right
                 li #{FirstLabel}
                 li #{SecondLabel}
@@ -11,21 +16,31 @@ mixin menu(LeftSideText, FirstLabel, SecondLabel, ThirdLabel, FourthLabel, Fifth
                 li #{FifthLabel}
 
 mixin sports-event-label(day, month, heading, stadium, button_text)
+
+    // Sports event label
     .event.column.large-12
+
+        // Calendar icon and date
         .column.large-2
             ul.menu
                 li: i.fi-calendar
                 li: strong #{day}<br>#{month}
 
+        // Description
         .column.large-8
             h6: strong #{heading}
             h6 #{stadium}
 
+        // Button
         .column.large-2
             a.tiny.button(href="") #{button_text}
 
 mixin sports-event(src, alt, stadium, heading, button_text)
+
+    // Sport event tab
     .column
+
+        // Image, text and button
         .sport-event
             img(src=src, alt=alt)
             h6 #{stadium}
@@ -33,10 +48,13 @@ mixin sports-event(src, alt, stadium, heading, button_text)
             a.tiny.button(href="") #{button_text}
 
 mixin recommended-event(src, alt, heading)
+
+    // Recommended event tab
     .column.large-2
         img(src=src, alt=alt)
         h6 #{heading}
 
+        // Star rating
         .rating
             span ☆
             span ☆
@@ -45,30 +63,44 @@ mixin recommended-event(src, alt, heading)
             span ☆
 
 mixin ticket-full-image(src, alt)
+
+    // Hot ticket event FULL IMAGE
     .column.large-3
+
+        // Image
         .ticket-full-image-box
             img(src=src, alt=alt)
 
 mixin ticket-small-text(src, alt, heading, description, smallText, ButtonText)
+
+    // Hot ticket event with small text in description
     .column.large-3
+
+        // Image, text, button
         .ticket-box
             img(src=src, alt=alt)
             h5 #{heading}
             p #{description}
                  small #{smallText}
 
-            a.tiny.button(href="") #{ButtonText}
+            a.tiny.button.ticket-button(href="") #{ButtonText}
 
 mixin ticket(src, alt, heading, description, ButtonText)
+
+    // Hot ticket event vanila, without small text.
     .column.large-3
+
+        // Image, text, button
         .ticket-box
             img(src=src, alt=alt)
             h5 #{heading}
             p #{description}
 
-            a.tiny.button(href="") #{ButtonText}
+            a.tiny.button.ticket-button(href="") #{ButtonText}
 
 mixin social-media(src, alt, socialHeader, heading, about, description, ButtonText)
+
+    // Social media tab
     .column.large-3
         img(src=src, alt=alt)
         h5(class="#{socialHeader}") #{heading}
@@ -78,16 +110,23 @@ mixin social-media(src, alt, socialHeader, heading, about, description, ButtonTe
         a.tiny.button(href="") #{ButtonText}
 
 mixin information-tab(divClass, src, alt, heading, description)
+
+    // Information tab (underneath the social media row)
     .column.large-3
+
+        // Left side image.
         .float-left
             div(class="#{divClass}")
                 img(src=src, alt=alt)
 
+        // Right side text
         .float-right
             h5 #{heading}
             h6 #{description}
 
 mixin photo-information(heading, description, aText)
+
+    // Image information, going on the image
     h3 #{heading}
     h4 #{description}
 
