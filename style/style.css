@@ -324,6 +324,7 @@ h1.logo {
   border: 1px solid #e6e6e6;
   padding-right: 0.7rem;
   max-height: 65px;
+  margin-top: 5px;
 }
 
 .event-label .description h6 {
@@ -376,6 +377,7 @@ h1.logo {
   border: 2px solid #95c3e3;
   background-color: #ddedf7;
   max-height: 50px;
+  margin-bottom: 6px;
 }
 
 .event-label-button p {
@@ -390,6 +392,153 @@ h1.logo {
 
 .callout {
   padding: 10px;
+}
+
+.information-tab:first-child h5 {
+  margin-right: 55px;
+}
+
+.information-tab:nth-child(2) {
+  padding: 0 0.25rem;
+}
+
+.information-tab:nth-child(3) p {
+  margin-right: 15px;
+}
+
+.information-tab:nth-child(4) h5 {
+  margin-right: 45px;
+}
+
+.information-tab .float-left .ticket, .information-tab .float-left .shipping, .information-tab .float-left .refund {
+  border-radius: 100%;
+  border: 2px solid #b1b1b1;
+  width: 65px;
+  height: 65px;
+  position: relative;
+}
+
+.information-tab .float-left .ticket img, .information-tab .float-left .shipping img, .information-tab .float-left .refund img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.information-tab .float-left .star {
+  background-color: #1e84cc;
+  border-radius: 100%;
+  width: 65px;
+  height: 65px;
+  position: relative;
+}
+
+.information-tab .float-left .star img {
+  position: absolute;
+  margin: auto;
+  top: -2px;
+  left: 2px;
+  right: 0;
+  bottom: 0;
+}
+
+.information-tab .float-right h5 {
+  margin-top: 15px;
+  color: #303030;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.information-tab .float-right p {
+  color: #acacac;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+footer {
+  background-color: #2d2d30;
+}
+
+footer .row h5 {
+  color: #acacad;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer .row .menu {
+  margin-top: 50px;
+}
+
+footer .row .menu a {
+  padding: 15px 0 0 0;
+  color: #f7f6f5;
+  text-transform: capitalize;
+}
+
+footer .row .column:first-child .footer-logo {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+footer .row .column:first-child .float-left img {
+  margin-top: 5px;
+}
+
+footer .row .column:first-child .float-right h6, footer .row .column:first-child .float-right p {
+  color: #acacad;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer .row .column:first-child .float-right h6 {
+  font-size: 13px;
+}
+
+footer .row .column:first-child .float-right p {
+  font-size: 10px;
+  margin-top: -10px;
+  margin-right: 30px;
+}
+
+footer .row .column:nth-child(5) h6 {
+  margin-top: 50px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+footer .row .column:nth-child(5) p {
+  color: #acacad;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+footer .row .column:nth-child(5) p span {
+  color: #1e84cc;
+}
+
+footer .row .column:nth-child(5) .input-group-field {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+footer .row .column:nth-child(5) .input-group-button .button {
+  margin-left: -1px;
+}
+
+footer .row .footer-text {
+  text-align: center;
+  font-size: 11px;
+  color: #acacad;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 .row-full {

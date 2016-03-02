@@ -1,0 +1,2 @@
+- Footerio inputas nesutvarkytas.
+- Iconos neiskirptos ir nesudetos

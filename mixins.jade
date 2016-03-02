@@ -126,7 +126,7 @@ mixin social-media(src, alt, socialHeader, heading, about, description, ButtonTe
 mixin information-tab(divClass, src, alt, heading, description)
 
     // Information tab (underneath the social media row)
-    .column.large-3
+    .column.large-3.information-tab
 
         // Left side image.
         .float-left
@@ -136,7 +136,7 @@ mixin information-tab(divClass, src, alt, heading, description)
         // Right side text
         .float-right
             h5 #{heading}
-            h6 #{description}
+            p #{description}
 
 mixin photo-information(heading, description, aText)
 
