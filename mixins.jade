@@ -64,9 +64,9 @@ mixin sports-event-small-text(src, alt, stadium, heading, className, smallText, 
 mixin recommended-event(src, alt, heading)
 
     // Recommended event tab
-    .column.large-2
-        img(src=src, alt=alt)
-        h6 #{heading}
+    .column.large-2.recommended-tab
+        img.float-center(src=src, alt=alt)
+        h6.text-center #{heading}
 
         // Star rating
         .rating
@@ -115,13 +115,14 @@ mixin ticket(src, alt, heading, description, ButtonText)
 mixin social-media(src, alt, socialHeader, heading, about, description, ButtonText)
 
     // Social media tab
-    .column.large-3
-        img(src=src, alt=alt)
-        h5(class="#{socialHeader}") #{heading}
-        h6 #{about}
-        p #{description}
+    .column.large-3.social-media-tab
+        .social-media
+            img(src=src, alt=alt)
+            h6(class="#{socialHeader}") #{heading}
+            h5 #{about}
+            p #{description}
 
-        a.tiny.button(href="") #{ButtonText}
+            a.tiny.button.social-media-button(href="") #{ButtonText}
 
 mixin information-tab(divClass, src, alt, heading, description)
 

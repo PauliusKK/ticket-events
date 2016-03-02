@@ -1,2 +1,3 @@
 - Footerio inputas nesutvarkytas.
 - Iconos neiskirptos ir nesudetos
+- Star ratingas nepadarytas

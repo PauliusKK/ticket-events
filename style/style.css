@@ -533,12 +533,120 @@ footer .row .column:nth-child(5) .input-group-button .button {
 
 footer .row .footer-text {
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   color: #acacad;
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 25px;
+}
+
+.social-media-tab {
+  padding: 0 0.45rem;
+}
+
+.social-media {
+  border: 1px solid #dcdcdc;
+  position: relative;
+}
+
+.social-media img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.social-media h6 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.social-media h5 {
+  font-size: 17px;
+  color: #5b5b5b;
+  margin-left: 20px;
+}
+
+.social-media p {
+  color: #808080;
+  font-size: 13px;
+  padding-right: 90px;
+  margin-left: 20px;
+}
+
+.social-media .social-facebook {
+  color: #425f9c;
+}
+
+.social-media .social-twitter {
+  color: #55acee;
+}
+
+.social-media .social-googleplus {
+  color: #e02321;
+}
+
+.social-media .social-instagram {
+  color: #3f160d;
+}
+
+.social-media-button {
+  background-color: #f6f6f6;
+  color: #303030;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 13px !important;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 28.641px;
+  border: 1px solid #d7d7d7;
+  width: 95px;
+  height: 30px;
+  line-height: 8px;
+}
+
+.recommended-row {
+  background-color: white;
+  border: 1px solid #dcdcdc;
+}
+
+.recommended-row .recommended-tab {
+  border-right: 1px solid #e3e3e3;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  max-height: 105px;
+  padding: 0 0.1rem;
+  margin-left: -0.3rem;
+  margin-right: -0.3rem;
+}
+
+.recommended-row .recommended-tab img {
+  margin-top: -10px;
+}
+
+.recommended-row .recommended-tab h6 {
+  color: #808080;
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.recommended-row .recommended-tab .rating {
+  width: 100%;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.recommended-row .arrow {
+  margin-top: -155px;
+  width: 60px;
+  height: 155px;
+  float: right;
+  background-color: white;
+  border-left: 1px solid #e3e3e3;
 }
 
 .row-full {
