@@ -240,7 +240,7 @@ body
 
 
     // HOT TICKETS
-    .row
+    .row.menu-navi
 
         // Navigation
         +menu("HOT TICKETS", "Family", "Sport", "Music", "Art", "Food")
@@ -260,7 +260,7 @@ body
 
 
     // Sports menu row
-    .row
+    .row.menu-navi
 
         // Navigation
         +menu("SPORTS", "All", "Basketball", "Tennis", "Rugby", "Formula 1")
@@ -270,7 +270,7 @@ body
     .row.sports-row
 
         // Close Button
-        .column.small-12.large-7
+        .column.small-12.large-7.sports-labels
             .primary.callout.event-label-button(data-closable)
                 p Recommender Sport Evenets past 5 Days
                 button.close-button(aria-label="Dismiss alert" type="button" data-close)
@@ -294,7 +294,7 @@ body
 
 
         // Right Side Images
-        .column.small-12.large-5
+        .column.small-12.large-5.sports-images
 
             .image-with-text
                 img(src="images/tickets-5.jpg", alt="Rugby")
@@ -319,7 +319,7 @@ body
 
 
     // RECOMMENDED FOR YOU
-    .row
+    .row.menu-navi
 
         // Navigation
         .column.small-12.menu-navigation-one
@@ -351,7 +351,7 @@ body
 
 
     // Music navigation menu
-    .row
+    .row.menu-navi
 
         // Navigation
         +menu("MUSIC", "Live", "Rock", "Transe", "Techno", "National")
@@ -371,7 +371,7 @@ body
 
     .row.music-events-labels-row
         // Left Side Images
-        .column.small-12.large-5
+        .column.small-12.large-5.sports-images-bottom
 
             .image-with-text
                 img(src="images/music-5.jpg", alt="Hardwell")
@@ -383,7 +383,7 @@ body
 
 
         // Close Button
-        .column.small-12.large-7
+        .column.small-12.large-7.sports-labels-bottom
             .primary.callout.event-label-button(data-closable)
                 p Recommender Sport Evenets past 5 Days
                 button.close-button(aria-label="Dismiss alert" type="button" data-close)
@@ -406,90 +406,92 @@ body
             // Events END
 
 
-
     // Social Media
-    .row.social-media-row
+    .full-row
+        .bottom-background
 
-        +social-media("images/facebook.png", "Facebook", "social-facebook", "Facebook", "Follow us on facebook", "You would have to be half mad to dream me up", "Like Us")
+        .row.social-media-row
 
-        +social-media("images/twitter.png", "Twitter", "social-twitter", "Twitter", "Follow us on twitter", "You would have to be half mad to dream me up", "Tweet Now")
+            +social-media("images/facebook.png", "Facebook", "social-facebook", "Facebook", "Follow us on facebook", "You would have to be half mad to dream me up", "Like Us")
 
-        +social-media("images/googleplus.png", "Google Plus", "social-googleplus", "GOOGLE +", "Follow us on google plus", "You would have to be half mad to dream me up", "Follow Us")
+            +social-media("images/twitter.png", "Twitter", "social-twitter", "Twitter", "Follow us on twitter", "You would have to be half mad to dream me up", "Tweet Now")
 
-        +social-media("images/instagram.png", "Instagram", "social-instagram", "Instragram", "Follow us on instagram", "You would have to be half mad to dream me up", "Follow Us")
+            +social-media("images/googleplus.png", "Google Plus", "social-googleplus", "GOOGLE +", "Follow us on google plus", "You would have to be half mad to dream me up", "Follow Us")
 
-
-
-    // More Information under social-media
-    .row.information-tabs-row
-
-        +information-tab("ticket", "images/icon-ticket.png", "Ticket", "+15.000 Tickets", "Sports, Movies, etc.")
-
-        +information-tab("star", "images/icon-star.png", "Star", "More then 20 Categories", "Football, Rugby, Tennis")
-
-        +information-tab("shipping", "images/icon-shipping.png", "Shipping", "Free Shipping", "Free shipping on the world")
-
-        +information-tab("refund", "images/icon-pig.png", "Refund", "Refund in 2 days", "100% guarantee")
+            +social-media("images/instagram.png", "Instagram", "social-instagram", "Instragram", "Follow us on instagram", "You would have to be half mad to dream me up", "Follow Us")
 
 
 
-    footer
-        .row
+        // More Information under social-media
+        .row.information-tabs-row
 
-            // Logo and Free shipping information
-            .column.large-2
-                img.footer-logo(src="images/footer-logo.png", alt="Logo")
-                h5 Ticket Services
+            +information-tab("ticket", "images/icon-ticket.png", "Ticket", "+15.000 Tickets", "Sports, Movies, etc.")
 
-                .float-left
-                    img(src="images/icon-delivery.png", alt="Delivery")
+            +information-tab("star", "images/icon-star.png", "Star", "More then 20 Categories", "Football, Rugby, Tennis")
 
-                .float-right
-                    h6 Free Shipping
-                    p On All U.S. Orders
+            +information-tab("shipping", "images/icon-shipping.png", "Shipping", "Free Shipping", "Free shipping on the world")
 
-            // Policies
-            .column.large-2.large-offset-1
-                ul.menu.vertical
-                    li: h5 Policies
-                    li: a(href="") Privacy Policy
-                    li: a(href="") Return Policy
-                    li: a(href="") Shipping Policy
+            +information-tab("refund", "images/icon-pig.png", "Refund", "Refund in 2 days", "100% guarantee")
 
-            // Account information
-            .column.large-2
-                ul.menu.vertical
-                    li: h5 Account
-                    li: a(href="") Login
-                    li: a(href="") Register
-                    li: a(href="") My Account
-                    li: a(href="") History
-                    li: a(href="") Wishlist
 
-            // Website information and necessary buttons
-            .column.large-2
-                ul.menu.vertical
-                    li: h5 Website
-                    li: a(href="") Home
-                    li: a(href="") Tickets
-                    li: a(href="") Events
-                    li: a(href="") Contact Us
-                    li: a(href="") Help
 
-            // Subscribe information
-            .column.large-3
-                h6 Subscribe Today
-                p and <span>save a 10%</span> on your next order
+        footer
+            .row
 
-                .input-group
-                    input.input-group-field(type="text")
-                    .input-group-button
-                        input.button(type="submit", value="Submit")
+                // Logo and Free shipping information
+                .column.large-2
+                    img.footer-logo(src="images/footer-logo.png", alt="Logo")
+                    h5 Ticket Services
 
-                p I don't think... " then you<br>shouldn't talk, said the Hatter.
+                    .float-left
+                        img(src="images/icon-delivery.png", alt="Delivery")
 
-            .column.small-12
-                p.footer-text &copy; 2015 TICKET SERVICE. All rights reserved. CODE: PAULIUS KAŠIUBA, DESIGN: UNKNOWN
+                    .float-right
+                        h6 Free Shipping
+                        p On All U.S. Orders
+
+                // Policies
+                .column.large-2.large-offset-1
+                    ul.menu.vertical
+                        li: h5 Policies
+                        li: a(href="") Privacy Policy
+                        li: a(href="") Return Policy
+                        li: a(href="") Shipping Policy
+
+                // Account information
+                .column.large-2
+                    ul.menu.vertical
+                        li: h5 Account
+                        li: a(href="") Login
+                        li: a(href="") Register
+                        li: a(href="") My Account
+                        li: a(href="") History
+                        li: a(href="") Wishlist
+
+                // Website information and necessary buttons
+                .column.large-2
+                    ul.menu.vertical
+                        li: h5 Website
+                        li: a(href="") Home
+                        li: a(href="") Tickets
+                        li: a(href="") Events
+                        li: a(href="") Contact Us
+                        li: a(href="") Help
+
+                // Subscribe information
+                .column.large-3
+                    h6 Subscribe Today
+                    p and <span>save a 10%</span> on your next order
+
+                    .input-group
+                        input.input-group-field(type="text")
+                        .input-group-button
+                            input.button(type="submit", value="Submit")
+
+                    p I don't think... " then you<br>shouldn't talk, said the Hatter.
+
+                .column.small-12
+                    p.footer-text &copy; 2015 TICKET SERVICE. All rights reserved. CODE: PAULIUS KAŠIUBA, DESIGN: UNKNOWN
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
     script(src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js")

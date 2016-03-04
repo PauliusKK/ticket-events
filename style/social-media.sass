@@ -1,5 +1,5 @@
 .social-media-row
-    margin-top: 25px
+    background-color: white
 
 // Social media column
 .social-media-tab
@@ -59,3 +59,23 @@
     width: 95px
     height: 30px
     line-height: 8px
+
+
+// Full-row class and bottom white background before social media row
+.bottom-background
+    margin-top: -50px
+    position: absolute
+    top: 0
+    max-width: 100%
+    min-width: 100%
+    background-image: linear-gradient(#fff, #fff), linear-gradient(white, white)
+    background-clip: content-box, padding-box
+    height: 50px
+    z-index: -1
+
+.full-row
+    position: relative
+    padding-top: 25px
+    max-width: 100%
+    background-image: linear-gradient(#fff, #fff), linear-gradient(white, white)
+    background-clip: content-box, padding-box

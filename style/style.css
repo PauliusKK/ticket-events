@@ -70,6 +70,15 @@ label.custom-select {
   content: none;
 }
 
+.menu-navi .column {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.menu-navi .column .float-right li:last-child {
+  padding-right: 0;
+}
+
 .menu-navigation .float-left li {
   font-size: 21px;
   color: #303030;
@@ -251,9 +260,20 @@ h1.logo {
   margin-top: 20px;
 }
 
+.ticket-full-image-box img {
+  width: 100%;
+  max-height: 429px;
+}
+
 .ticket-box {
   border: 1px solid #e6e6e6;
-  max-height: 416px;
+  max-height: 429px;
+  background-color: white;
+}
+
+.ticket-box img {
+  max-height: 275.953px;
+  width: 100%;
 }
 
 .ticket-box h5 {
@@ -300,23 +320,57 @@ h1.logo {
   padding: 0.7em 0.9em;
 }
 
+.hot-tickets .column:nth-child(2),
+.hot-tickets .column:nth-child(3),
+.hot-tickets .column:nth-child(4),
+.music-events-row .column:first-child,
+.music-events-row .column:nth-child(2),
+.music-events-row .column:nth-child(3) {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.music-events-row .column:nth-child(4),
+.hot-tickets .column:first-child {
+  padding-left: 0.1rem;
+}
+
+.music-events-row .column:first-child,
+.hot-tickets .column:first-child {
+  padding-right: 0.35rem;
+  padding-left: 0;
+}
+
+.hot-tickets .column:last-child {
+  padding-right: 0;
+}
+
+.music-events-row .column:last-child {
+  padding-right: 0;
+  padding-left: 0.35rem;
+}
+
 .sport-events-row {
   margin-top: 35px;
 }
 
-.music-events-labels-row {
-  margin-top: 30px;
+.sports-row {
+  margin-top: 45px;
 }
 
 .sports {
-  padding-left: 0.1rem;
-  padding-right: 0.1rem;
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
 }
 
 .sport-event {
   background-color: white;
   border: 1px solid #e6e6e6;
   max-height: 415px;
+}
+
+.sport-event img {
+  height: 292.031px;
 }
 
 .sport-event h6 {
@@ -361,15 +415,45 @@ h1.logo {
   padding: 0.7em 0.9em;
 }
 
-.sports-row {
-  margin-top: 45px;
+.sports:first-child {
+  padding-left: 0;
+}
+
+.sports:last-child {
+  padding-right: 0;
+}
+
+.sports-labels {
+  padding-left: 0;
+}
+
+.sports-images {
+  padding-right: 0;
+  margin-right: -6px;
+}
+
+.image-with-text {
+  max-width: 480px;
+  margin-right: 0;
+}
+
+.sports-images-bottom {
+  padding-left: 0;
+}
+
+.sports-labels-bottom {
+  padding-right: 0;
+}
+
+.music-events-labels-row {
+  margin-top: 30px;
 }
 
 .event-label {
   background-color: white;
   border: 1px solid #e6e6e6;
   padding-right: 0.7rem;
-  max-height: 65px;
+  max-height: 66px;
   margin-top: 5px;
 }
 
@@ -484,7 +568,7 @@ h1.logo {
 }
 
 .social-media-row {
-  margin-top: 25px;
+  background-color: white;
 }
 
 .social-media-tab {
@@ -552,6 +636,26 @@ h1.logo {
   width: 95px;
   height: 30px;
   line-height: 8px;
+}
+
+.bottom-background {
+  margin-top: -50px;
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  min-width: 100%;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(white, white);
+  background-clip: content-box, padding-box;
+  height: 50px;
+  z-index: -1;
+}
+
+.full-row {
+  position: relative;
+  padding-top: 25px;
+  max-width: 100%;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(white, white);
+  background-clip: content-box, padding-box;
 }
 
 .information-tabs-row {
@@ -704,6 +808,10 @@ footer .row .footer-text {
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 25px;
+}
+
+body {
+  background-color: #f6f6f6;
 }
 
 .rating {
