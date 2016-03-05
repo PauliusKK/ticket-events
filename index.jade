@@ -147,18 +147,31 @@ body
                 li LinkedIn
 
         .column.large-10.main-pictures
-            ul.menu
-                li.image-with-text.float-left
+            ul.menu.float-right
+                li.main-image.float-left
                     img(src="images/slider-1.jpg", alt="Dillon Francis")
-                    +photo-information-main("Dillon Francis", "UNITED CENTER, CHICAGO, IL", "Get it Now!")
 
-                li.image-with-text
+                    // Image information, going on the image
+                    .image-text-main
+                        h2 Dillon Francis
+                        h4 UNITED CENTER, CHICAGO, IL
+
+                        .rating
+                            span ☆
+                            span ☆
+                            span ☆
+                            span ☆
+                            span ☆
+
+                        p.image-a: a(href="") <br>Get It Now!
+
+                li.main-image-2
                         img(src="images/slider-2.jpg", alt="The Game")
 
                         // Image information, going on the image
-                        .image-text
-                            h2 #{heading}
-                            h4 #{description}
+                        .image-text-main-2
+                            h3 The Game  Tour
+                            h4 December 2015
 
                             .rating
                                 span ☆
@@ -167,15 +180,15 @@ body
                                 span ☆
                                 span ☆
 
-                            a(href="") #{aText}
+                            p.image-a: a(href="") <br>Get It Now!
 
-                  .image-with-text.float-left
+                li.main-image-3.float-left
                         img(src="images/slider-3.jpg", alt="Miami vs Cleavlend CL")
 
                         // Image information, going on the image
-                        .image-text
-                            h2 #{heading}
-                            h4 #{description}
+                        .image-text-main-3
+                            h3 Miami vs Cleavlend CL
+                            h4 Medison Square
 
                             .rating
                                 span ☆
@@ -184,7 +197,9 @@ body
                                 span ☆
                                 span ☆
 
-                            a(href="") #{aText}
+                            p.image-a: a(href="") <br>Get It Now!
+
+
 
     // Search
     .row
@@ -298,11 +313,11 @@ body
 
             .image-with-text
                 img(src="images/tickets-5.jpg", alt="Rugby")
-                +photo-information("L.A Lakers vs Chicago Bulls!", "BMO Harris Bank Conter", "Get It Now!")
+                +photo-information-left("L.A Lakers vs ", "Chicago Bulls!", "BMO Harris Bank Conter", "Get It Now!")
 
             .image-with-text
                 img(src="images/tickets-6.jpg", alt="Messi")
-                +photo-information("Barcelona vs Real Madrid Tickets", "Kamp Nou", "Get It Now!")
+                +photo-information-right("Barcelona vs ", "Real Madrid Tickets", "Kamp Nou", "Get It Now!")
 
 
     // Sports Events with Pictures
@@ -375,11 +390,11 @@ body
 
             .image-with-text
                 img(src="images/music-5.jpg", alt="Hardwell")
-                +photo-information("Hardwell TOP 10 DJ Tour 2015", "BMO Harris Bank Center", "Get It Now!")
+                +photo-information-left("Hardwell TOP 10 DJ", "Tour 2015", "BMO Harris Bank Center", "Get It Now!")
 
             .image-with-text
                 img(src="images/music-6.jpg", alt="Feddle Le Grand Tour")
-                +photo-information("Feddle Le Grand Tour Vegas", "Belagio", "Get It Now!")
+                +photo-information-right("Feddle Le Grand ", "Tour Vegas", "Belagio", "Get It Now!")
 
 
         // Close Button

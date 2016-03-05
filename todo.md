@@ -1,7 +1,6 @@
 - Footerio inputas nesutvarkytas.
 - Iconos neiskirptos ir nesudetos
 - Star ratingas nepadarytas
-- Image text nepadarytas
 - Inputai nepadaryti
 - Search boxas nebaigtas
 - Arrow nepadarytas recommended for you

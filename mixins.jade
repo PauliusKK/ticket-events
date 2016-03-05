@@ -139,11 +139,11 @@ mixin information-tab(divClass, src, alt, heading, description)
             h5 #{heading}
             p #{description}
 
-mixin photo-information(heading, description, aText)
+mixin photo-information-left(heading1, heading2, description, aText)
 
     // Image information, going on the image
-    .image-text
-        h3 #{heading}
+    .image-text-left
+        h3 #{heading1}<br>#{heading2}
         h4 #{description}
 
         .rating
@@ -153,13 +153,13 @@ mixin photo-information(heading, description, aText)
             span ☆
             span ☆
 
-        a(href="") #{aText}
+        p.image-a: a(href="") <br>#{aText}
 
-mixin photo-information-main(heading, description, aText)
+mixin photo-information-right(heading1, heading2, description, aText)
 
     // Image information, going on the image
-    .image-text-main
-        h2 #{heading}
+    .image-text-right
+        h3 #{heading1}<br>#{heading2}
         h4 #{description}
 
         .rating
@@ -169,4 +169,4 @@ mixin photo-information-main(heading, description, aText)
             span ☆
             span ☆
 
-        a(href="") #{aText}
+        p.image-a: a(href="") <br>#{aText}
