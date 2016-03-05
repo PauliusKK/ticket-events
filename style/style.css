@@ -318,6 +318,11 @@ label.custom-select {
   font-size: 18px;
 }
 
+.shop-row {
+  margin-bottom: 25px;
+  margin-top: -1px;
+}
+
 .main-pictures {
   padding-left: 0;
   padding-right: 0;
@@ -526,6 +531,66 @@ h1.logo {
   top: 50%;
   left: 25%;
   transform: translateY(-50%);
+}
+
+.shop-row {
+  border: 1px solid #dcdcdc;
+  background-color: white;
+}
+
+.shop-row .column:first-child .menu {
+  margin: 25px;
+}
+
+.shop-row .column:first-child .menu li:nth-child(n+2) {
+  padding-left: 25px;
+}
+
+.shop-row .column:first-child .menu li strong {
+  font-size: 18px;
+  color: #414040;
+}
+
+.shop-row .column:first-child .menu li p {
+  font-size: 15px;
+  color: #a3a3a3;
+  margin-bottom: 0;
+}
+
+.shop-row .column:first-child .menu .vertical-line {
+  height: 25px;
+  width: 3px;
+  padding: 0;
+  text-indent: -10000px;
+  background-color: #2c3e52;
+}
+
+.shop-row .column:first-child .progress {
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 0.075rem;
+}
+
+.shop-row .column:first-child .progress .progress-meter {
+  height: 100%;
+}
+
+.shop-row .inputs {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.shop-row .inputs .column {
+  margin-bottom: 30px;
+}
+
+.shop-row .inputs .column label {
+  color: #414040;
+  font-size: 15px;
+}
+
+.shop-row .inputs .column label select {
+  margin-top: 5px;
 }
 
 .ticket-full-image-box img {
@@ -1003,46 +1068,6 @@ footer .row .footer-text {
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 25px;
-}
-
-.shop-row {
-  margin-bottom: 25px;
-}
-
-.shop-row {
-  border: 1px solid #dcdcdc;
-  background-color: white;
-}
-
-.shop-row .column:first-child .menu li strong {
-  font-size: 18px;
-  color: #414040;
-}
-
-.shop-row .column:first-child .menu li p {
-  font-size: 15px;
-  color: #a3a3a3;
-}
-
-.shop-row .column:first-child .progress {
-  height: 0.075rem;
-}
-
-.shop-row .column:first-child .progress .progress-meter {
-  height: 100%;
-}
-
-.shop-row .column:nth-child(n+2) {
-  margin-bottom: 30px;
-}
-
-.shop-row .column:nth-child(n+2) label {
-  color: #414040;
-  font-size: 15px;
-}
-
-.shop-row .column:nth-child(n+2) label select {
-  margin-top: 5px;
 }
 
 body {

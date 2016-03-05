@@ -12,6 +12,7 @@ $color-information-tab-border: #b1b1b1
 $color-footer: #2d2d30
 $color-social-button-border: #d7d7d7
 $color-recommended-inside-border: #e3e3e3
+$color-vertical-line: #2c3e52
 
 
 // Text color variables
@@ -55,6 +56,7 @@ $social-instagram: #3f160d
 // Website sections
 @import "header"
 @import "search-section"
+@import "shop-section"
 @import "hot-tickets"
 @import "sports-section"
 @import "recommended-section"
@@ -65,43 +67,6 @@ $social-instagram: #3f160d
 //  -----------------
 
 // File imports END
-
-
-
-.shop-row
-    margin-bottom: 25px
-
-.shop-row
-    border: 1px solid $color-borders
-    background-color: white
-
-    .column:first-child
-        .menu
-            li strong
-                font-size: 18px
-                color: $text-label
-
-            li p
-                font-size: 15px
-                color: $text-shop-description
-
-
-        .progress
-            height: 0.075rem
-
-            .progress-meter
-                height: 100%
-
-
-    .column:nth-child(n+2)
-        margin-bottom: 30px
-
-        label
-            color: $text-label
-            font-size: 15px
-
-            select
-                margin-top: 5px
 
 
 body
