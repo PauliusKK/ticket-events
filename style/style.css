@@ -454,7 +454,7 @@ h1.logo {
   border: 1px solid #e6e6e6;
   padding-right: 0.7rem;
   max-height: 66px;
-  margin-top: 5px;
+  margin-top: 5.5px;
 }
 
 .event-label .description h6 {
@@ -658,24 +658,56 @@ h1.logo {
   background-clip: content-box, padding-box;
 }
 
+.social-media-row .column:first-child {
+  padding-left: 0;
+  padding-right: 0.9rem;
+}
+
+.social-media-row .column:last-child {
+  padding-left: 0.9rem;
+  padding-right: 0;
+}
+
+.social-media-row .column:nth-child(2) {
+  padding-left: 0;
+}
+
+.social-media-row .column:nth-child(3) {
+  padding-right: 0;
+}
+
 .information-tabs-row {
   margin-top: 50px;
 }
 
-.information-tab:first-child h5 {
-  margin-right: 55px;
+.information-tab:first-child p {
+  margin-right: 85px;
 }
 
 .information-tab:nth-child(2) {
-  padding: 0 0.25rem;
+  padding-left: 0;
+  padding-right: 0.25rem;
+  margin-left: -20px;
+}
+
+.information-tab:nth-child(3) {
+  margin-left: 20px;
 }
 
 .information-tab:nth-child(3) p {
   margin-right: 15px;
 }
 
+.information-tab:nth-child(4) {
+  padding: 0;
+}
+
 .information-tab:nth-child(4) h5 {
   margin-right: 45px;
+}
+
+.information-tab:nth-child(4) .float-left {
+  margin-left: 25px;
 }
 
 .information-tab .float-left .ticket, .information-tab .float-left .shipping, .information-tab .float-left .refund {
@@ -723,6 +755,11 @@ h1.logo {
   color: #acacac;
   font-size: 15px;
   margin-top: -10px;
+}
+
+.information-tabs-row .column:first-child {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 footer {
