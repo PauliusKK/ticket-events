@@ -29,6 +29,8 @@ $text-footer-services: #acacad
 $text-footer-menu: #f7f6f5
 $text-social-media-heading: #5b5b5b
 $text-image-right-description: #dadada
+$text-label: #414040
+$text-shop-description: #a3a3a3
 
 
 // Social media color variables
@@ -66,9 +68,40 @@ $social-instagram: #3f160d
 
 
 
+.shop-row
+    margin-bottom: 25px
+
+.shop-row
+    border: 1px solid $color-borders
+    background-color: white
+
+    .column:first-child
+        .menu
+            li strong
+                font-size: 18px
+                color: $text-label
+
+            li p
+                font-size: 15px
+                color: $text-shop-description
 
 
+        .progress
+            height: 0.075rem
 
+            .progress-meter
+                height: 100%
+
+
+    .column:nth-child(n+2)
+        margin-bottom: 30px
+
+        label
+            color: $text-label
+            font-size: 15px
+
+            select
+                margin-top: 5px
 
 
 body

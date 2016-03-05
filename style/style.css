@@ -992,6 +992,7 @@ footer .row .column:nth-child(5) .input-group-field {
 
 footer .row .column:nth-child(5) .input-group-button .button {
   margin-left: -1px;
+  height: 2.5rem;
 }
 
 footer .row .footer-text {
@@ -1002,6 +1003,46 @@ footer .row .footer-text {
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 25px;
+}
+
+.shop-row {
+  margin-bottom: 25px;
+}
+
+.shop-row {
+  border: 1px solid #dcdcdc;
+  background-color: white;
+}
+
+.shop-row .column:first-child .menu li strong {
+  font-size: 18px;
+  color: #414040;
+}
+
+.shop-row .column:first-child .menu li p {
+  font-size: 15px;
+  color: #a3a3a3;
+}
+
+.shop-row .column:first-child .progress {
+  height: 0.075rem;
+}
+
+.shop-row .column:first-child .progress .progress-meter {
+  height: 100%;
+}
+
+.shop-row .column:nth-child(n+2) {
+  margin-bottom: 30px;
+}
+
+.shop-row .column:nth-child(n+2) label {
+  color: #414040;
+  font-size: 15px;
+}
+
+.shop-row .column:nth-child(n+2) label select {
+  margin-top: 5px;
 }
 
 body {
