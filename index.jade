@@ -35,40 +35,42 @@ body
 
 
     // Logo, Search, Shopping Cart
-    .row.searchbox
+    .full-searchbox-row
 
-        // Logo
-        .column.small-2
-            h1.logo Ticket
+        .row.searchbox
 
-        // Search Input
-        .column.small-7.search-input
-
-            // Category select
-            .column.small-4
-                label
-                    select
-                        option(value="All Categories") All Categories
-                        option(value="Option1") Option1
-                        option(value="Option2") Option2
-
-            // Search form
-            .column.small-8
-                label
-                    input(type="text", placeholder="Enter Artist , Team , or Venue")
-
-        // Shopping Cart
-        .column.small-3.shopping-cart
+            // Logo
             .column.small-2
+                h1.logo Ticket
 
-                // Shopping Cart ICON
-                .cart
-                    i.fi-shopping-cart.size-24
+            // Search Input
+            .column.small-7.search-input
 
-            // Shopping cart information
-            .column.small-10
-                h4 Shopping Cart
-                p 3 Item (s) - $578.14
+                // Category select
+                .column.small-4
+                    label
+                        select
+                            option(value="All Categories") All Categories
+                            option(value="Option1") Option1
+                            option(value="Option2") Option2
+
+                // Search form
+                .column.small-8
+                    label
+                        input(type="text", placeholder="Enter Artist , Team , or Venue")
+
+            // Shopping Cart
+            .column.small-3.shopping-cart
+                .column.small-2
+
+                    // Shopping Cart ICON
+                    .cart
+                        i.fi-shopping-cart.size-24
+
+                // Shopping cart information
+                .column.small-10
+                    h4 Shopping Cart
+                    p 3 Item (s) - $578.14
 
 
     // Navigation
@@ -101,55 +103,55 @@ body
                     li: a.i-social-linkedin(href="") LinkedIn
 
 
-    .row.under-navigation
+    .row.left-categories
 
         .column.large-2
             ul.menu.vertical
                 li
                     ul.menu
-                        li: a(href="") Trash
+                        li: .square: img(src="images/icon-music.png", alt="")
                         li: a(href="") Music
-                        li: a(href="") Arrow
+                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
                 li
                     ul.menu
-                        li: a(href="") Trash
-                        li: a(href="") Music
-                        li: a(href="") Arrow
+                        li: .square: img(src="images/icon-movies.png", alt="")
+                        li: a(href="") Movies
+                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
                 li
                     ul.menu
-                        li: a(href="") Trash
-                        li: a(href="") Music
-                        li: a(href="") Arrow
+                        li: .square: img(src="images/icon-sport.png", alt="")
+                        li: a(href="") Sport
+                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
                 li
                     ul.menu
-                        li: a(href="") Trash
-                        li: a(href="") Music
-                        li: a(href="") Arrow
+                        li: .square: img(src="images/icon-comedy.png", alt="")
+                        li: a(href="") Comedy
+                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
                 li
                     ul.menu
-                        li: a(href="") Trash
-                        li: a(href="") Music
-                        li: a(href="") Arrow
+                        li: .square: img(src="images/icon-family.png", alt="")
+                        li: a(href="") Family
+                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
                 li
                     ul.menu
-                        li: a(href="") Trash
-                        li: a(href="") Music
-                        li: a(href="") Arrow
+                        li: .square: img(src="images/icon-arts.png", alt="")
+                        li: a(href="") Arts
+                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
                 li
                     ul.menu
-                        li: a(href="") Trash
-                        li: a(href="") Music
-                        li: a(href="") Arrow
+                        li: .square: img(src="images/icon-theatre.png", alt="")
+                        li: a(href="") Theatre
+                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
                 li
                     ul.menu
-                        li: a(href="") Trash
-                        li: a(href="") Music
-                        li: a(href="") Arrow
+                        li: .square: img(src="images/icon-fashion.png", alt="")
+                        li: a(href="") Fashion
+                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
                 li.last-li
                     ul.menu
-                        li: a(href="") Trash
-                        li: a(href="") Music
-                        li: a(href="") Arrow
+                        li: .square: img(src="images/icon-food.png", alt="")
+                        li: a(href="") Food
+                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
 
 
         .column.large-10.main-pictures
