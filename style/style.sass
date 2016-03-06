@@ -33,6 +33,7 @@ $text-social-media-heading: #5b5b5b
 $text-image-right-description: #dadada
 $text-label: #414040
 $text-shop-description: #a3a3a3
+$text-left-categories: #6e6e6e
 
 
 // Social media color variables
@@ -148,6 +149,47 @@ $social-instagram: #3f160d
                     background-image: url(../images/icon-linkedin.png)
                     background-repeat: no-repeat
                     padding-right: 0
+
+
+.under-navigation
+
+    .column:first-child
+        padding: 0
+
+        ul
+            li
+                ul
+                    li:first-child
+                        background-color: white
+                        border: 1px solid $color-borders
+                        border-bottom: none
+                        position: relative
+
+                        a
+                            width: 45px
+                            height: 50.5px
+                            text-indent: -10000px
+
+
+                    li:nth-child(2)
+                        background-color: white
+                        border-top: 1px solid $color-borders
+
+                        a
+                            color: $text-left-categories
+                            font-size: 15px
+                            width: 213px
+
+                    li:last-child
+                        background-color: white
+                        border-top: 1px solid $color-borders
+                        border-right: 1px solid $color-borders
+
+                        a
+                            width: 40px
+                            text-indent: -10000px
+
+
 
 
 

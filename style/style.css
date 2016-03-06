@@ -320,7 +320,6 @@ label.custom-select {
 
 .shop-row {
   margin-bottom: 25px;
-  margin-top: -1px;
 }
 
 .main-pictures {
@@ -1158,6 +1157,45 @@ footer .row .footer-text {
   background-image: url(../images/icon-linkedin.png);
   background-repeat: no-repeat;
   padding-right: 0;
+}
+
+.under-navigation .column:first-child {
+  padding: 0;
+}
+
+.under-navigation .column:first-child ul li ul li:first-child {
+  background-color: white;
+  border: 1px solid #dcdcdc;
+  border-bottom: none;
+  position: relative;
+}
+
+.under-navigation .column:first-child ul li ul li:first-child a {
+  width: 45px;
+  height: 50.5px;
+  text-indent: -10000px;
+}
+
+.under-navigation .column:first-child ul li ul li:nth-child(2) {
+  background-color: white;
+  border-top: 1px solid #dcdcdc;
+}
+
+.under-navigation .column:first-child ul li ul li:nth-child(2) a {
+  color: #6e6e6e;
+  font-size: 15px;
+  width: 213px;
+}
+
+.under-navigation .column:first-child ul li ul li:last-child {
+  background-color: white;
+  border-top: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+}
+
+.under-navigation .column:first-child ul li ul li:last-child a {
+  width: 40px;
+  text-indent: -10000px;
 }
 
 body {
