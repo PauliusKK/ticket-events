@@ -325,7 +325,7 @@ label.custom-select {
 
 .main-pictures {
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 0px;
 }
 
 .menu-navi .column {
@@ -1068,6 +1068,96 @@ footer .row .footer-text {
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 25px;
+}
+
+.full-navigation-row {
+  position: relative;
+  max-width: 100%;
+  background-color: #1e84cc;
+}
+
+.navigation-row .navigation {
+  background-color: #1e84cc;
+  padding: 0;
+}
+
+.navigation-row .navigation ul li:first-child {
+  background-color: #1b6faa;
+  max-width: 275px;
+}
+
+.navigation-row .navigation ul li:first-child a {
+  margin-right: 90px;
+}
+
+.navigation-row .navigation ul li:first-child a strong {
+  font-weight: normal;
+  margin-left: 25px;
+}
+
+.navigation-row .navigation ul li:nth-child(2) {
+  padding-left: 4px;
+}
+
+.navigation-row .navigation ul li {
+  color: white;
+  height: 60px;
+}
+
+.navigation-row .navigation ul li a {
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-left: 35px;
+  white-space: nowrap;
+}
+
+.navigation-row .navigation ul li a.contact-us {
+  padding-right: 25px;
+}
+
+.navigation-row .navigation ul li a.i-social-facebook,
+.navigation-row .navigation ul li a.i-social-twitter,
+.navigation-row .navigation ul li a.i-social-googleplus,
+.navigation-row .navigation ul li a.i-social-linkedin {
+  text-indent: -10000px;
+  padding-left: 35px;
+  max-height: 20px;
+  width: 20px;
+}
+
+.navigation-row .navigation ul li a.i-arrow-right {
+  text-indent: -10000px;
+  padding-right: 25px;
+  height: 20px;
+  width: 39px;
+  margin-top: 3px;
+}
+
+.navigation-row .navigation ul li a.i-arrow-right {
+  background-image: url(../images/arrow-right.png);
+  background-repeat: no-repeat;
+}
+
+.navigation-row .navigation ul li a.i-social-facebook {
+  background-image: url(../images/icon-facebook.png);
+  background-repeat: no-repeat;
+}
+
+.navigation-row .navigation ul li a.i-social-twitter {
+  background-image: url(../images/icon-twitter.png);
+  background-repeat: no-repeat;
+}
+
+.navigation-row .navigation ul li a.i-social-googleplus {
+  background-image: url(../images/icon-googleplus.png);
+  background-repeat: no-repeat;
+}
+
+.navigation-row .navigation ul li a.i-social-linkedin {
+  background-image: url(../images/icon-linkedin.png);
+  background-repeat: no-repeat;
+  padding-right: 0;
 }
 
 body {
