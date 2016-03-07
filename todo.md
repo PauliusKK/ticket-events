@@ -1,7 +1,5 @@
-- Footerio inputas nesutvarkytas.
 - Iconos neiskirptos ir nesudetos
 - Star ratingas nepadarytas
 - Inputai nepadaryti
-- Search boxas nebaigtas
-- Arrow nepadarytas recommended for you
 - Fontai nesudeti
+- All categories arrow down pakeisti i buttona.

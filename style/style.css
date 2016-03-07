@@ -495,10 +495,58 @@ h1.logo {
   margin-top: 50px;
 }
 
+.search-input {
+  padding-left: 4rem;
+}
+
 .search-input .column {
   padding-left: 0;
   padding-right: 0;
   margin-top: 40px;
+}
+
+.search-input .column:first-child {
+  padding: 0 0.6rem;
+}
+
+.search-input .column:first-child label select {
+  border: 1px solid #dcdcdc;
+  color: #6e6e6e;
+  font-size: 15px;
+  padding-left: 20px;
+  background: url(../images/input-arrow-down.png) no-repeat right #fff;
+  background-position-x: 145px;
+  height: 50px;
+  outline: none;
+}
+
+.search-input .column:first-child label select option {
+  color: #6e6e6e;
+  font-size: 15px;
+}
+
+.search-input .column:last-child input {
+  margin-left: -11px;
+  border: 1px solid #dcdcdc;
+  height: 50px;
+  box-shadow: none;
+}
+
+.search-input .column:last-child input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #b7b7b7;
+}
+
+.search-input .column:last-child button.icon {
+  border: 1px solid #dcdcdc;
+  border-left: none;
+  background: #fefefe;
+  height: 50px;
+  width: 50px;
+  color: #cccccc;
+  font-size: 10pt;
+  float: right;
+  margin-top: -66px;
 }
 
 .shopping-cart {
@@ -528,12 +576,13 @@ h1.logo {
   margin-left: -15px;
 }
 
-.cart i.fi-shopping-cart {
-  font-size: 1.75em;
+.cart img {
   position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translateY(-50%);
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .full-navigation-row {
@@ -871,6 +920,10 @@ h1.logo {
   padding: 10px;
 }
 
+.callout button span {
+  color: #1e84cc;
+}
+
 .recommended-row {
   background-color: white;
   border: 1px solid #dcdcdc;
@@ -910,6 +963,16 @@ h1.logo {
   float: right;
   background-color: white;
   border-left: 1px solid #e3e3e3;
+  position: relative;
+}
+
+.recommended-row .arrow img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .sport-event {
@@ -1193,14 +1256,30 @@ footer .row .column:nth-child(5) p span {
   color: #1e84cc;
 }
 
+footer .row .column:nth-child(5) .input-group {
+  max-width: 220px;
+}
+
 footer .row .column:nth-child(5) .input-group-field {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  max-width: 180px;
 }
 
-footer .row .column:nth-child(5) .input-group-button .button {
-  margin-left: -1px;
-  height: 2.5rem;
+footer .row .column:nth-child(5) .input-group-button {
+  background-color: #1e84cc;
+  height: 2.5em;
+  padding: 0 20px;
+  position: relative;
+}
+
+footer .row .column:nth-child(5) .input-group-button img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 footer .row .footer-text {

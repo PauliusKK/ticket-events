@@ -50,14 +50,14 @@ body
                 .column.small-4
                     label
                         select
-                            option(value="All Categories") All Categories
-                            option(value="Option1") Option1
-                            option(value="Option2") Option2
+                            option(value="default-text") All Categories
+                            option(value="1") Option1
+                            option(value="2") Option2
 
                 // Search form
                 .column.small-8
-                    label
-                        input(type="text", placeholder="Enter Artist , Team , or Venue")
+                    input(type="text", placeholder="Enter Artist, Team, or Venue")
+                    button.icon: i.fi-magnifying-glass.size-24
 
             // Shopping Cart
             .column.small-3.shopping-cart
@@ -65,7 +65,7 @@ body
 
                     // Shopping Cart ICON
                     .cart
-                        i.fi-shopping-cart.size-24
+                        img(src="images/icon-shopping-cart.png", alt="Shopping Cart")
 
                 // Shopping cart information
                 .column.small-10
@@ -374,6 +374,7 @@ body
         +recommended-event("images/banner-2.png", "Chicago Bulls", "Chicago Backhawks")
 
         .arrow
+            img(src="images/icon-rec-arrow.png", alt="Show")
 
 
     // Music navigation menu
@@ -511,7 +512,7 @@ body
                     .input-group
                         input.input-group-field(type="text")
                         .input-group-button
-                            input.button(type="submit", value="Submit")
+                            img(src="images/icon-rightarrow.png", alt="Submit")
 
                     p I don't think... " then you<br>shouldn't talk, said the Hatter.
 
@@ -524,3 +525,5 @@ body
 
 // http://red-team-design.com/making-html-dropdowns-not-suck/
 // https://css-tricks.com/text-blocks-over-image/
+// http://webdesign.tutsplus.com/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069
+// http://stackoverflow.com/questions/1895476/how-to-style-a-select-dropdown-with-css-only-without-javascript

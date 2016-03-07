@@ -8,10 +8,57 @@ h1.logo
     text-indent: -10000px
     margin-top: 50px
 
-.search-input .column
-    padding-left: 0
-    padding-right: 0
-    margin-top: 40px
+.search-input
+    padding-left: 4rem
+
+    .column
+        padding-left: 0
+        padding-right: 0
+        margin-top: 40px
+
+    .column:first-child
+        padding: 0 0.6rem
+
+        label
+
+            select
+                border: 1px solid $color-borders
+                color: $text-option
+                font-size: 15px
+                padding-left: 20px
+                background: url(../images/input-arrow-down.png) no-repeat right #fff
+                background-position-x: 145px
+                height: 50px
+                outline: none
+
+                option
+                    color: $text-option
+                    font-size: 15px
+
+    .column:last-child
+
+        input
+            margin-left: -11px
+            border: 1px solid $color-borders
+            height: 50px
+            box-shadow: none
+
+        input::-webkit-input-placeholder
+            font-size: 15px
+            color: $text-input
+
+        button.icon
+            border: 1px solid $color-borders
+            border-left: none
+            background: #fefefe
+            height: 50px
+            width: 50px
+            color: $color-dropdown
+            font-size: 10pt
+            float: right
+            margin-top: -66px
+
+
 
 .shopping-cart
     margin-top: 40px
@@ -36,9 +83,10 @@ h1.logo
     position: relative
     margin-left: -15px
 
-    i.fi-shopping-cart
-        font-size: 1.75em
+    img
         position: absolute
-        top: 50%
-        left: 25%
-        transform: translateY(-50%)
+        margin: auto
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
