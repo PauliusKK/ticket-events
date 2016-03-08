@@ -639,6 +639,10 @@ h1.logo {
   padding-left: 4px;
 }
 
+.navigation-row .navigation ul li.has-submenu a:after {
+  border-color: white transparent transparent !important;
+}
+
 .navigation-row .navigation ul li {
   color: white;
   height: 60px;
