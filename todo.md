@@ -2,4 +2,3 @@
 - Star ratingas nepadarytas
 - Inputai nepadaryti
 - Fontai nesudeti
-- All categories arrow down pakeisti i buttona.
