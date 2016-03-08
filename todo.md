@@ -1,4 +1,3 @@
 - Iconos neiskirptos ir nesudetos
-- Star ratingas nepadarytas
 - Inputai nepadaryti
 - Fontai nesudeti

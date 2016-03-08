@@ -15,6 +15,9 @@ $color-recommended-inside-border: #e3e3e3
 $color-vertical-line: #2c3e52
 $color-darkblue: #1b6faa
 $color-icon-background: #fefefe
+$color-star-active: #f6b63a
+$color-star-inactive: #d7d7d7
+
 
 
 // Text color variables
@@ -37,6 +40,7 @@ $text-shop-description: #a3a3a3
 $text-left-categories: #6e6e6e
 $text-input: #b7b7b7
 $text-option: #6e6e6e
+$text-star-rating: #aaaaaa
 
 
 // Social media color variables
@@ -75,23 +79,22 @@ $social-instagram: #3f160d
 
 // File imports END
 
-
-
 body
     background-color: $color-gray
 
 
 .rating
-    unicode-bidi: bidi-override
-    direction: rtl
-    float: left
+    display: inline
 
-.rating > span
-    display: inline-block
-    position: relative
-    width: 1.1em
+    i
+        color: $color-star-active
+        font-size: 1.1em
+        margin: 0 0.15em
 
-.rating > span:hover:before,
-.rating > span:hover ~ span:before
-    content: "\2605"
-    position: absolute
+    .inactive
+        color: $color-star-inactive
+
+    a
+        font-size: 0.9em
+        margin-left: 5px
+        color: $text-star-rating

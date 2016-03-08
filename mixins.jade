@@ -70,11 +70,11 @@ mixin recommended-event(src, alt, heading)
 
         // Star rating
         .rating
-            span ☆
-            span ☆
-            span ☆
-            span ☆
-            span ☆
+            i.fi-star
+            i.fi-star
+            i.fi-star
+            i.fi-star
+            i.fi-star.inactive
 
 mixin ticket-full-image(src, alt)
 
@@ -147,11 +147,12 @@ mixin photo-information-left(heading1, heading2, description, aText)
         h4 #{description}
 
         .rating
-            span ☆
-            span ☆
-            span ☆
-            span ☆
-            span ☆
+            i.fi-star
+            i.fi-star
+            i.fi-star
+            i.fi-star
+            i.fi-star.inactive
+            a(href="") (53)
 
         p.image-a: a(href="") <br>#{aText}
 
@@ -163,10 +164,11 @@ mixin photo-information-right(heading1, heading2, description, aText)
         h4 #{description}
 
         .rating
-            span ☆
-            span ☆
-            span ☆
-            span ☆
-            span ☆
+            i.fi-star
+            i.fi-star
+            i.fi-star
+            i.fi-star
+            i.fi-star.inactive
+            a(href="") (53)
 
         p.image-a: a(href="") <br>#{aText}
