@@ -19,21 +19,19 @@ h1.logo
     .column:first-child
         padding: 0 0.6rem
 
-        label
+        select
+            border: 1px solid $color-borders
+            color: $text-option
+            font-size: 15px
+            padding-left: 20px
+            height: 50px
+            background-image: url(../images/input-arrow-down.png)
+            background-repeat: no-repeat
+            background-position: 75% 50%
 
-            select
-                border: 1px solid $color-borders
+            option
                 color: $text-option
                 font-size: 15px
-                padding-left: 20px
-                background: url(../images/input-arrow-down.png) no-repeat right #fff
-                background-position-x: 145px
-                height: 50px
-                outline: none
-
-                option
-                    color: $text-option
-                    font-size: 15px
 
     .column:last-child
 
@@ -50,7 +48,7 @@ h1.logo
         button.icon
             border: 1px solid $color-borders
             border-left: none
-            background: #fefefe
+            background: $color-icon-background
             height: 50px
             width: 50px
             color: $color-dropdown

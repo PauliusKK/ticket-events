@@ -509,18 +509,18 @@ h1.logo {
   padding: 0 0.6rem;
 }
 
-.search-input .column:first-child label select {
+.search-input .column:first-child select {
   border: 1px solid #dcdcdc;
   color: #6e6e6e;
   font-size: 15px;
   padding-left: 20px;
-  background: url(../images/input-arrow-down.png) no-repeat right #fff;
-  background-position-x: 145px;
   height: 50px;
-  outline: none;
+  background-image: url(../images/input-arrow-down.png);
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
 }
 
-.search-input .column:first-child label select option {
+.search-input .column:first-child select option {
   color: #6e6e6e;
   font-size: 15px;
 }
