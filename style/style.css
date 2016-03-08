@@ -603,7 +603,7 @@ h1.logo {
 }
 
 .navigation-row .navigation ul li:nth-child(2) {
-  padding-left: 9px;
+  padding-left: 8px;
 }
 
 .navigation-row .navigation ul li.has-submenu a:after {
@@ -620,7 +620,7 @@ h1.logo {
   color: white;
   font-size: 15px;
   text-transform: uppercase;
-  padding-left: 43px;
+  padding-left: 32px;
   white-space: nowrap;
 }
 
@@ -875,15 +875,19 @@ h1.logo {
 }
 
 .event-label .calendar ul {
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .event-label .calendar ul li {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .event-label .calendar ul li:first-child {
   padding-left: 0;
+}
+
+.event-label .calendar ul li:first-child img {
+  margin-top: -5px;
 }
 
 .event-button {
