@@ -74,7 +74,6 @@ label.custom-select {
   font-size: 21px;
   color: #303030;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
@@ -85,7 +84,6 @@ label.custom-select {
   padding: 0 10px;
   font-weight: bold;
   line-height: 30px;
-  font-family: 'PT Sans', sans-serif;
 }
 
 .menu-navigation .float-right li:before {
@@ -111,7 +109,6 @@ label.custom-select {
   font-size: 21px;
   color: #303030;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
@@ -121,7 +118,6 @@ label.custom-select {
   text-transform: capitalize;
   font-weight: bold;
   line-height: 30px;
-  font-family: 'PT Sans', sans-serif;
 }
 
 .menu-navigation-one .float-right li:hover,
@@ -456,7 +452,7 @@ header .column:last-child ul li button {
   background: none;
   color: #919191;
   font-size: 15px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 header .column:last-child ul li button:focus,
@@ -711,7 +707,6 @@ h1.logo {
   color: #6e6e6e;
   font-size: 15px;
   width: 213px;
-  font-family: 'PT Sans', sans-serif;
 }
 
 .left-categories .column:first-child ul li ul li:last-child {
@@ -780,7 +775,6 @@ h1.logo {
 .shop-row .inputs .column label {
   color: #414040;
   font-size: 15px;
-  font-family: 'PT Sans', sans-serif;
 }
 
 .shop-row .inputs .column label select {
