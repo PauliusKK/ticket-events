@@ -3,16 +3,34 @@ header
     background-color: $color-gray
 
     // Header main column
-    .column
+    .column:first-child
         margin-top: 15px
 
         p
             color: $text-header
 
-// Header buttons
-.header-button
-    background: none
-    color: $text-header
+    .column:last-child
+        margin-top: 12px
 
-.header-button:after
-    border-color: $color-dropdown transparent transparent !important
+        ul
+            li
+                padding-left: 15px
+
+                i
+                    color: $color-dropdown
+                    padding-right: 5px
+
+                button
+                    padding: 0.40em
+                    background: none
+                    color: $text-header
+                    font-size: 15px
+
+                button:focus,
+                button:active,
+                button:hover
+                    background-color: #e9e9e9
+                    border-radius: 5px
+
+                button:after
+                    border-color: $color-dropdown transparent transparent !important

@@ -466,20 +466,42 @@ header {
   background-color: #f6f6f6;
 }
 
-header .column {
+header .column:first-child {
   margin-top: 15px;
 }
 
-header .column p {
+header .column:first-child p {
   color: #919191;
 }
 
-.header-button {
+header .column:last-child {
+  margin-top: 12px;
+}
+
+header .column:last-child ul li {
+  padding-left: 15px;
+}
+
+header .column:last-child ul li i {
+  color: #cccccc;
+  padding-right: 5px;
+}
+
+header .column:last-child ul li button {
+  padding: 0.40em;
   background: none;
   color: #919191;
+  font-size: 15px;
 }
 
-.header-button:after {
+header .column:last-child ul li button:focus,
+header .column:last-child ul li button:active,
+header .column:last-child ul li button:hover {
+  background-color: #e9e9e9;
+  border-radius: 5px;
+}
+
+header .column:last-child ul li button:after {
   border-color: #cccccc transparent transparent !important;
 }
 
