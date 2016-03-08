@@ -172,3 +172,10 @@ mixin photo-information-right(heading1, heading2, description, aText)
             a(href="") (53)
 
         p.image-a: a(href="") <br>#{aText}
+
+mixin left-categories-label(src, ButtonText)
+    li
+        ul.menu
+            li: .square: img(src=src, alt="")
+            li: a(href="") #{ButtonText}
+            li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")

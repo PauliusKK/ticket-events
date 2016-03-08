@@ -1,3 +1,5 @@
 - Iconos neiskirptos ir nesudetos
 - Inputai nepadaryti
-- Fontai nesudeti
+- Shop select fontas nepakeistas
+- Nuotrauku fontas nepakeistas
+

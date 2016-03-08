@@ -4,9 +4,12 @@ html(lang="en")
         title Ticket Event
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css")
-        link(ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
+        link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Montserrat:400,700")
+        link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic")
+        link(ref="stylesheet", type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic")
         link(rel="stylesheet", href="style/style.css")
         include mixins
 
@@ -17,7 +20,7 @@ body
 
             // Header text
             .column.small-6
-                p.float-left <strong>Hello !</strong> Update your list of favorites and never miss an event!
+                p.float-left <strong>Hello !</strong> <i>Update your list of favorites and never miss an event!</i>
 
             // Location and account information
             .column.small-6
@@ -107,51 +110,15 @@ body
 
         .column.large-2
             ul.menu.vertical
-                li
-                    ul.menu
-                        li: .square: img(src="images/icon-music.png", alt="")
-                        li: a(href="") Music
-                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
-                li
-                    ul.menu
-                        li: .square: img(src="images/icon-movies.png", alt="")
-                        li: a(href="") Movies
-                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
-                li
-                    ul.menu
-                        li: .square: img(src="images/icon-sport.png", alt="")
-                        li: a(href="") Sport
-                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
-                li
-                    ul.menu
-                        li: .square: img(src="images/icon-comedy.png", alt="")
-                        li: a(href="") Comedy
-                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
-                li
-                    ul.menu
-                        li: .square: img(src="images/icon-family.png", alt="")
-                        li: a(href="") Family
-                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
-                li
-                    ul.menu
-                        li: .square: img(src="images/icon-arts.png", alt="")
-                        li: a(href="") Arts
-                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
-                li
-                    ul.menu
-                        li: .square: img(src="images/icon-theatre.png", alt="")
-                        li: a(href="") Theatre
-                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
-                li
-                    ul.menu
-                        li: .square: img(src="images/icon-fashion.png", alt="")
-                        li: a(href="") Fashion
-                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
-                li.last-li
-                    ul.menu
-                        li: .square: img(src="images/icon-food.png", alt="")
-                        li: a(href="") Food
-                        li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
+                +left-categories-label("images/icon-music.png", "Music")
+                +left-categories-label("images/icon-movies.png", "Movies")
+                +left-categories-label("images/icon-sport.png", "Sport")
+                +left-categories-label("images/icon-comedy.png", "Comedy")
+                +left-categories-label("images/icon-family.png", "Family")
+                +left-categories-label("images/icon-arts.png", "Arts")
+                +left-categories-label("images/icon-theatre.png", "Theatre")
+                +left-categories-label("images/icon-fashion.png", "Fashion")
+                +left-categories-label("images/icon-food.png", "Food")
 
 
         .column.large-10.main-pictures

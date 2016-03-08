@@ -74,6 +74,8 @@ label.custom-select {
   font-size: 21px;
   color: #303030;
   text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .menu-navigation .float-right li {
@@ -83,6 +85,7 @@ label.custom-select {
   padding: 0 10px;
   font-weight: bold;
   line-height: 30px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .menu-navigation .float-right li:before {
@@ -108,6 +111,8 @@ label.custom-select {
   font-size: 21px;
   color: #303030;
   text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .menu-navigation-one .float-right li {
@@ -116,6 +121,7 @@ label.custom-select {
   text-transform: capitalize;
   font-weight: bold;
   line-height: 30px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .menu-navigation-one .float-right li:hover,
@@ -428,6 +434,8 @@ header .column:first-child {
 
 header .column:first-child p {
   color: #919191;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
 }
 
 header .column:last-child {
@@ -448,6 +456,7 @@ header .column:last-child ul li button {
   background: none;
   color: #919191;
   font-size: 15px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 header .column:last-child ul li button:focus,
@@ -496,11 +505,13 @@ h1.logo {
   background-image: url(../images/input-arrow-down.png);
   background-repeat: no-repeat;
   background-position: 75% 50%;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .search-input .column:first-child select option {
   color: #6e6e6e;
   font-size: 15px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .search-input .column:last-child input {
@@ -513,6 +524,8 @@ h1.logo {
 .search-input .column:last-child input::-webkit-input-placeholder {
   font-size: 15px;
   color: #b7b7b7;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
 }
 
 .search-input .column:last-child button.icon {
@@ -534,15 +547,17 @@ h1.logo {
 .shopping-cart h4 {
   color: #1e84cc;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 15px;
   margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .shopping-cart p {
   color: #bababa;
   font-size: 15px;
   margin-top: -10px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .cart {
@@ -588,11 +603,11 @@ h1.logo {
   margin-left: 25px;
   text-transform: capitalize;
   font-size: 18px;
-  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navigation-row .navigation ul li:nth-child(2) {
-  padding-left: 4px;
+  padding-left: 9px;
 }
 
 .navigation-row .navigation ul li.has-submenu a:after {
@@ -602,13 +617,14 @@ h1.logo {
 .navigation-row .navigation ul li {
   color: white;
   height: 60px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .navigation-row .navigation ul li a {
   color: white;
   font-size: 15px;
   text-transform: uppercase;
-  padding-left: 35px;
+  padding-left: 43px;
   white-space: nowrap;
 }
 
@@ -695,6 +711,7 @@ h1.logo {
   color: #6e6e6e;
   font-size: 15px;
   width: 213px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .left-categories .column:first-child ul li ul li:last-child {
@@ -723,12 +740,14 @@ h1.logo {
 .shop-row .column:first-child .menu li strong {
   font-size: 18px;
   color: #414040;
+  font-family: "Montserrat", sans-serif;
 }
 
 .shop-row .column:first-child .menu li p {
   font-size: 15px;
   color: #a3a3a3;
   margin-bottom: 0;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .shop-row .column:first-child .menu .vertical-line {
@@ -761,6 +780,7 @@ h1.logo {
 .shop-row .inputs .column label {
   color: #414040;
   font-size: 15px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .shop-row .inputs .column label select {
@@ -804,6 +824,7 @@ h1.logo {
   color: #1e84cc;
   padding: 3px 4px;
   margin-left: 5px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .ticket-box p small.text-hot {
@@ -812,6 +833,7 @@ h1.logo {
   color: #ef8742;
   padding: 3px 4px;
   margin-left: 5px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .ticket-button {
@@ -822,9 +844,10 @@ h1.logo {
   margin-top: 4px;
   font-size: 12px !important;
   text-transform: uppercase;
-  font-weight: bold;
   margin-bottom: 28.641px;
   padding: 0.7em 0.9em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
 }
 
 .event-label {
@@ -877,8 +900,9 @@ h1.logo {
   margin-top: 15px;
   font-size: 12px !important;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
   padding: 0.7em 0.9em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .event-label-button {
@@ -935,7 +959,8 @@ h1.logo {
 .recommended-row .recommended-tab .rating {
   width: 100%;
   text-align: center;
-  margin-bottom: -10px;
+  margin-bottom: -5px;
+  margin-top: -5px;
   float: left;
 }
 
@@ -989,6 +1014,7 @@ h1.logo {
   color: #1e84cc;
   padding: 3px 4px;
   margin-left: 5px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .sport-event p small.text-hot {
@@ -997,6 +1023,7 @@ h1.logo {
   color: #ef8742;
   padding: 3px 4px;
   margin-left: 5px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .sport-button {
@@ -1006,8 +1033,9 @@ h1.logo {
   margin-left: 15px;
   font-size: 12px !important;
   text-transform: uppercase;
-  font-weight: bold;
   padding: 0.7em 0.9em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
 }
 
 .social-media-row {
@@ -1062,19 +1090,19 @@ h1.logo {
   color: #3f160d;
 }
 
-.social-media-button {
+.social-media .social-media-button {
   background-color: #f6f6f6;
   color: #303030;
   border-radius: 5px;
   margin-left: 20px;
-  font-size: 13px !important;
+  font-size: 12px !important;
   text-transform: capitalize;
-  font-weight: bold;
   margin-bottom: 28.641px;
   border: 1px solid #d7d7d7;
   width: 95px;
   height: 30px;
   line-height: 8px;
+  white-space: nowrap;
 }
 
 .bottom-background {
@@ -1109,6 +1137,7 @@ h1.logo {
 
 .information-tab:nth-child(3) {
   margin-left: 20px;
+  padding: 0;
 }
 
 .information-tab:nth-child(3) p {
@@ -1273,6 +1302,10 @@ footer .row .footer-text {
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 25px;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
