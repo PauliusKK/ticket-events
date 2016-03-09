@@ -1,1 +1,9 @@
-- Inputai nepadaryti
+- Nepadarytas responsive
+- Navigacijos islindimai nepadaryti
+- Left categories labai blogai atvaizduojamas kai ekranas mazesnis nei 1200px
+- Categories navigacijos list item blogai atvaizduojamas kai susitraukia
+- Shopping cart turi islyst visa informacija kai uzvedi
+- Image a text hover pakeist.
+- Social media tab mygtuku hover neveikia
+- Footer a hover nera
+- Footer subscribe today ant buttono hover nera.

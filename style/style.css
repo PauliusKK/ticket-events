@@ -1,75 +1,4 @@
 @charset "UTF-8";
-.size-12 {
-  font-size: 12px;
-}
-
-.size-14 {
-  font-size: 14px;
-}
-
-.size-16 {
-  font-size: 16px;
-}
-
-.size-18 {
-  font-size: 18px;
-}
-
-.size-21 {
-  font-size: 21px;
-}
-
-.size-24 {
-  font-size: 24px;
-}
-
-.size-36 {
-  font-size: 36px;
-}
-
-.size-48 {
-  font-size: 48px;
-}
-
-.size-60 {
-  font-size: 60px;
-}
-
-.size-72 {
-  font-size: 72px;
-}
-
-label.custom-select {
-  position: relative;
-}
-
-.custom-select select {
-  margin: 0;
-  line-height: 1.2;
-  background: #666;
-  color: white;
-  border: 0;
-}
-
-.custom-select:after {
-  content: "▼";
-  position: absolute;
-  top: 1;
-  right: 0;
-  bottom: 0;
-  font-size: 60%;
-  line-height: 39px;
-  border-left: solid 1px black;
-  padding: 0 15px;
-  background: #777;
-  color: white;
-  pointer-events: none;
-}
-
-.no-pointer-events .custom-select:after {
-  content: none;
-}
-
 .menu-navigation .float-left li {
   font-size: 21px;
   color: #303030;
@@ -781,6 +710,124 @@ h1.logo {
   margin-top: 5px;
 }
 
+.shop-row .inputs .column label.arrow-down-select {
+  position: relative;
+}
+
+.shop-row .inputs .column label.arrow-down-select select {
+  margin: 0;
+  line-height: 1.2;
+  background-color: white;
+  color: #919191;
+  border: 1px solid #dcdcdc;
+  height: 50px;
+  max-width: 200px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  padding-left: 15px;
+}
+
+.shop-row .inputs .column label.arrow-down-select select option {
+  color: #919191;
+  font-size: 15px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.shop-row .inputs .column label.arrow-down-select:after {
+  content: url(../images/input-arrow-down.png);
+  position: absolute;
+  top: 1;
+  right: 0;
+  bottom: 0;
+  line-height: 48px;
+  border: 1px solid #dcdcdc;
+  padding: 0 20px;
+  background-color: white;
+  pointer-events: none;
+}
+
+.shop-row .inputs .column label.calendar-select {
+  position: relative;
+}
+
+.shop-row .inputs .column label.calendar-select select {
+  margin: 0;
+  line-height: 1.2;
+  background-color: white;
+  color: #919191;
+  border: 1px solid #dcdcdc;
+  height: 50px;
+  max-width: 200px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  padding-left: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.shop-row .inputs .column label.calendar-select select option {
+  color: #919191;
+  font-size: 15px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.shop-row .inputs .column label.calendar-select:after {
+  content: url(../images/input-calendar.png);
+  position: absolute;
+  top: 1;
+  right: 0;
+  bottom: 0;
+  line-height: 48px;
+  border: 1px solid #dcdcdc;
+  padding: 4px 15px;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  pointer-events: none;
+}
+
+.shop-row .inputs .column label.town-select {
+  position: relative;
+}
+
+.shop-row .inputs .column label.town-select select {
+  margin: 0;
+  line-height: 1.2;
+  background-color: white;
+  color: #919191;
+  border: 1px solid #dcdcdc;
+  height: 50px;
+  max-width: 200px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  padding-left: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.shop-row .inputs .column label.town-select select option {
+  color: #919191;
+  font-size: 15px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.shop-row .inputs .column label.town-select:after {
+  content: "";
+  position: absolute;
+  top: 1;
+  right: 0;
+  bottom: 0;
+  line-height: 48px;
+  border: 1px solid #dcdcdc;
+  border-left: none;
+  height: 50px;
+  width: 20px;
+  background-color: white;
+  pointer-events: none;
+}
+
 .ticket-full-image-box img {
   width: 100%;
   max-height: 429px;
@@ -1124,7 +1171,7 @@ h1.logo {
 }
 
 .information-tab:first-child p {
-  margin-right: 85px;
+  margin-right: 65px;
 }
 
 .information-tab:nth-child(2) {
