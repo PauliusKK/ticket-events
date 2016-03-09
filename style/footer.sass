@@ -20,6 +20,9 @@ footer
                 color: $text-footer-menu
                 text-transform: capitalize
 
+            a:hover
+                color: $text-footer-menu-hover
+
 
         // First column
         .column:first-child
@@ -86,6 +89,11 @@ footer
                     left: 0
                     right: 0
                     bottom: 0
+
+            .input-group-button:hover,
+            .input-group-button:active,
+            .input-group-button:focus
+                background-color: $color-footer-button-hover
 
         // Footer text at the very bottom
         .footer-text
