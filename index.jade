@@ -59,7 +59,7 @@ body
                 // Search form
                 .column.small-8
                     input(type="text", placeholder="Enter Artist, Team, or Venue")
-                    button.icon: i.fi-magnifying-glass.size-24
+                    button.icon: i.fi-magnifying-glass
 
             // Shopping Cart
             .column.small-3.shopping-cart
@@ -73,6 +73,43 @@ body
                 .column.small-10
                     h4 Shopping Cart
                     p 3 Item (s) - $578.14
+
+            .column.large-3
+                .shopping-info
+                    ul.menu.vertical
+                        li
+                            img(src="http://placehold.it/54x54", alt="Item")
+                            h6.item-name The Game Ticket
+                            span.item-quantity 1
+                            span.fi-x
+                            span.price-currency $
+                            span.item-price 54
+                            span.fi-x.close
+
+                        li
+                            img(src="http://placehold.it/54x54", alt="Item")
+                            h6.item-name Dillon Francis
+                            span.item-quantity 1
+                            span.fi-x
+                            span.price-currency $
+                            span.item-price 54
+                            span.fi-x.close
+
+                        li
+                            img(src="http://placehold.it/54x54", alt="Item")
+                            h6.item-name Miami vs Cleavlend
+                            span.item-quantity 1
+                            span.fi-x
+                            span.price-currency $
+                            span.item-price 54
+                            span.fi-x.close
+
+                        li.checkout
+                            span.subtotal Subtotal:
+                            span.price-currency $
+                            span.item-price 578.14
+                            button.tiny.button CHECKOUT
+
 
 
     // Navigation
@@ -213,14 +250,14 @@ body
             .column
                 label.calendar-select From
                     select
-                        option Option 1
+                        option 3/29/2015
                         option Option 2
                         option Option 3
 
             .column
                 label.calendar-select To
                     select
-                        option Option 1
+                        option 15/29/2015
                         option Option 2
                         option Option 3
 
