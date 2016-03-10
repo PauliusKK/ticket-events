@@ -18,11 +18,12 @@ body
         .row
 
             // Header text
-            .column.small-6
-                p.float-left <strong>Hello !</strong> <i>Update your list of favorites and never miss an event!</i>
+            .column.large-6.medium-6.small-6
+                p.show-for-medium Hello, <strong>USERNAME</strong>
+                h1.logo.show-for-small-only Ticket
 
             // Location and account information
-            .column.small-6
+            .column.large-6.medium-6.small-6
                 .float-right
                     ul.menu
 
@@ -43,34 +44,34 @@ body
         .row.searchbox
 
             // Logo
-            .column.small-2
+            .column.large-2.show-for-large
                 h1.logo Ticket
 
             // Search Input
-            .column.small-7.search-input
+            .column.large-7.medium-12.search-input
 
                 // Category select
-                .column.small-4
+                .column.large-4.medium-4.small-12
                         select
                             option(value="default-text") All Categories
                             option(value="1") Option1
                             option(value="2") Option2
 
                 // Search form
-                .column.small-8
+                .column.large-8.medium-8.small-12
                     input(type="text", placeholder="Enter Artist, Team, or Venue")
                     button.icon: i.fi-magnifying-glass
 
             // Shopping Cart
-            .column.small-3.shopping-cart
-                .column.small-2
+            .column.large-3.show-for-large.shopping-cart
+                .column.large-2
 
                     // Shopping Cart ICON
                     .cart
                         img(src="images/icon-shopping-cart.png", alt="Shopping Cart")
 
                 // Shopping cart information
-                .column.small-10
+                .column.large-10
                     h4 Shopping Cart
                     p 3 Item (s) - $578.14
 
@@ -117,9 +118,9 @@ body
 
         .row.navigation-row
 
-            .column.large-12.navigation
+            .column.small-12.navigation
                 ul.dropdown.menu.float-right(data-dropdown-menu)
-                    li: a.fi-list(href=""): strong Categories
+                    li.show-for-large: a.fi-list(href=""): strong Categories
                     li: a(href="") Home
                     li.has-submenu
                         a(href="") Tickets
@@ -135,11 +136,11 @@ body
                             li: a(href="") Item 1A
                     li: a(href="") Special Offers
                     li: a.contact-us(href="") Contact Us
-                    li: a.i-arrow-right(href="") Arrow Right
-                    li: a.i-social-facebook(href="") Facebook
-                    li: a.i-social-twitter(href="") Twitter
-                    li: a.i-social-googleplus(href="") GooglePlus
-                    li: a.i-social-linkedin(href="") LinkedIn
+                    li.show-for-large: a.i-arrow-right(href="") Arrow Right
+                    li.show-for-large: a.i-social-facebook(href="") Facebook
+                    li.show-for-large: a.i-social-twitter(href="") Twitter
+                    li.show-for-large: a.i-social-googleplus(href="") GooglePlus
+                    li.show-for-large: a.i-social-linkedin(href="") LinkedIn
 
 
     .row.left-categories
@@ -157,7 +158,7 @@ body
                 +left-categories-label("images/icon-food.png", "Food")
 
 
-        .column.large-10.main-pictures
+        .column.large-10.show-for-large.main-pictures
             ul.menu.float-right
                 li.main-image.float-left
                     img(src="images/slider-1.jpg", alt="Dillon Francis")
@@ -364,7 +365,7 @@ body
                 li View All
 
 
-    .row.recommended-row
+    .row.recommended-row.show-for-medium
         // Events
         +recommended-event("images/banner-1.png", "Chicago Bulls", "Chicago Bulls")
 

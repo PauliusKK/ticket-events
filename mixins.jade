@@ -1,7 +1,7 @@
 mixin menu(LeftSideText, FirstLabel, SecondLabel, ThirdLabel, FourthLabel, FifthLabel)
 
         // Navigation before events
-        .column.small-12.menu-navigation
+        .column.large-12.medium-12.show-for-medium.menu-navigation
 
             // Left side text
             ul.menu.float-left
@@ -18,21 +18,21 @@ mixin menu(LeftSideText, FirstLabel, SecondLabel, ThirdLabel, FourthLabel, Fifth
 mixin sports-event-label(day, month, heading, stadium, button_text)
 
     // Sports event label
-    .event.column.large-12.event-label
+    .event.column.small-12.event-label
 
         // Calendar icon and date
-        .column.large-2.calendar
+        .column.small-2.calendar
             ul.menu
                 li: img(src="images/icon-calendar.png", alt="Date")
                 li.date: strong #{day}<br>#{month}
 
         // Description
-        .column.large-8.description
+        .column.small-8.description
             h6: strong #{heading}
             p #{stadium}
 
         // Button
-        .column.large-2.tab-button
+        .column.small-2.tab-button
             a.tiny.button.event-button(href="") #{button_text}
 
 mixin sports-event(src, alt, stadium, heading, button_text)
@@ -64,7 +64,7 @@ mixin sports-event-small-text(src, alt, stadium, heading, className, smallText, 
 mixin recommended-event(src, alt, heading)
 
     // Recommended event tab
-    .column.large-2.recommended-tab
+    .column.large-2.medium-2.recommended-tab
         img.float-center(src=src, alt=alt)
         h6.text-center #{heading}
 
@@ -79,7 +79,7 @@ mixin recommended-event(src, alt, heading)
 mixin ticket-full-image(src, alt)
 
     // Hot ticket event FULL IMAGE
-    .column.large-3
+    .column.large-3.medium-6.small-12
 
         // Image
         .ticket-full-image-box
@@ -88,7 +88,7 @@ mixin ticket-full-image(src, alt)
 mixin ticket-small-text(src, alt, heading, description, className, smallText, ButtonText)
 
     // Hot ticket event with small text in description
-    .column.large-3
+    .column.large-3.medium-6.small-12
 
         // Image, text, button
         .ticket-box
@@ -102,7 +102,7 @@ mixin ticket-small-text(src, alt, heading, description, className, smallText, Bu
 mixin ticket(src, alt, heading, description, ButtonText)
 
     // Hot ticket event vanila, without small text.
-    .column.large-3
+    .column.large-3.medium-6.small-12
 
         // Image, text, button
         .ticket-box
@@ -115,7 +115,7 @@ mixin ticket(src, alt, heading, description, ButtonText)
 mixin social-media(src, alt, socialHeader, heading, about, description, ButtonText)
 
     // Social media tab
-    .column.large-3.social-media-tab
+    .column.large-3.medium-6.show-for-medium.social-media-tab
         .social-media
             img(src=src, alt=alt)
             h6(class="#{socialHeader}") #{heading}
@@ -127,7 +127,7 @@ mixin social-media(src, alt, socialHeader, heading, about, description, ButtonTe
 mixin information-tab(divClass, src, alt, heading, description)
 
     // Information tab (underneath the social media row)
-    .column.large-3.information-tab
+    .column.large-3.medium-6.show-for-medium.information-tab
 
         // Left side image.
         .float-left

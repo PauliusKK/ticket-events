@@ -94,3 +94,119 @@ h1.logo
         left: 0
         right: 0
         bottom: 0
+
+
+
+// Shopping items
+.shopping-info
+    background-color: white
+    width: 290px
+    position: absolute
+    right: 220px
+    margin-top: 10px
+    z-index: 10
+    border-radius: 5px
+    border: 1px solid $color-borders
+    display: none
+
+    ul
+
+        li
+            border-bottom: 1px solid $color-borders
+            padding: 15px
+
+            img
+                float: left
+                margin-right: 12px
+
+            .item-name
+                padding-top: 7px
+                color: $text-menu-left
+                font-size: 15px
+                margin-bottom: -3px
+
+            .item-quantity
+                color: $text-ticket-description
+                font-size: 13px
+                font-weight: bold
+                font-family: "Open Sans", sans-serif
+                padding-right: 5px
+
+            .fi-x
+                font-size: 10px
+                color: $color-borders
+                padding-right: 5px
+
+            .price-currency
+                color: $text-currency
+                font-family: "Open Sans", sans-serif
+                font-size: 13px
+
+            .item-price
+                color: $text-menu-left
+                font-size: 13px
+                font-weight: bold
+                font-family: "Open Sans", sans-serif
+
+            .close
+                float: right
+                margin-top: -10px
+                font-size: 12px
+                padding: 1px 6px
+                border-radius: 100%
+                background-color: $text-image-hover
+                color: white
+
+            .close:hover,
+            .close:focus,
+            .close:active
+                background-color: $color-close-hover
+
+
+        li.checkout
+            padding: 15px
+
+            .subtotal
+                font-size: 15px
+                color: $text-ticket-description
+                padding-right: 8px
+
+            .price-currency
+                color: $text-currency
+                font-size: 18px
+
+            .item-price
+                color: $text-menu-left
+                font-size: 18px
+                font-weight: bold
+
+            .button
+                font-size: 11px
+                font-weight: bold
+                border-radius: 5px
+                float: right
+                padding: 10px 15px
+                background-color: $color-lightblue
+
+
+.shopping-info:after, .shopping-info:before
+    bottom: 100%
+    left: 75%
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+
+.shopping-info:after
+    border-color: rgba(255, 255, 255, 0)
+    border-bottom-color: white
+    border-width: 10px
+    margin-left: -10px
+
+.shopping-info:before
+    border-color: rgba(220, 220, 220, 0)
+    border-bottom-color: $color-borders
+    border-width: 11px
+    margin-left: -11px
