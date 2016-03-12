@@ -25,17 +25,20 @@ footer
 
 
         // First column
-        .column:first-child
+        .free-shipping
 
             .footer-logo
                 margin-top: 50px
                 margin-bottom: 25px
 
-            .float-left
-                img
-                    margin-top: 5px
+            li:first-child
 
-            .float-right
+                img
+                    margin-top: -20px
+
+            li:last-child
+                padding-left: 5px
+
                 h6, p
                     color: $text-footer-services
                     text-transform: uppercase
@@ -50,7 +53,7 @@ footer
                     margin-right: 30px
 
         // Last column
-        .column:nth-child(5)
+        .subscribe
 
             h6
                 margin-top: 50px

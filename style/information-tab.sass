@@ -28,7 +28,7 @@
 // Information tab
 .information-tab
 
-    .float-left
+    li:first-child
 
         .ticket, .shipping, .refund
             border-radius: 100%
@@ -62,7 +62,9 @@
                 bottom: 0
 
 
-    .float-right
+    li:last-child
+        padding-left: 15px
+
         h5
             margin-top: 15px
             color: $text-menu-left

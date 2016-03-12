@@ -64,7 +64,7 @@ mixin sports-event-small-text(src, alt, stadium, heading, className, smallText, 
 mixin recommended-event(src, alt, heading)
 
     // Recommended event tab
-    .column.large-2.medium-2.recommended-tab
+    .column.large-2.medium-3.recommended-tab
         img.float-center(src=src, alt=alt)
         h6.text-center #{heading}
 
@@ -129,15 +129,17 @@ mixin information-tab(divClass, src, alt, heading, description)
     // Information tab (underneath the social media row)
     .column.large-3.medium-6.show-for-medium.information-tab
 
-        // Left side image.
-        .float-left
-            div(class="#{divClass}")
-                img(src=src, alt=alt)
+        ul.menu
 
-        // Right side text
-        .float-right
-            h5 #{heading}
-            p #{description}
+            // Left side image.
+            li
+                div(class="#{divClass}")
+                    img(src=src, alt=alt)
+
+            // Right side text
+            li
+                h5 #{heading}
+                p #{description}
 
 mixin photo-information-left(heading1, heading2, description, aText)
 

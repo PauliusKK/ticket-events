@@ -15,14 +15,19 @@
 <body>
   <header>
     <div class="row">
-      <!-- Header text-->
-      <div class="column large-6 medium-6 small-6">
-        <p class="show-for-medium">Hello, <strong>USERNAME</strong></p>
-        <h1 class="logo show-for-small-only">Ticket</h1>
+      <div data-responsive-toggle="example-menu" data-hide-for="medium" class="title-bar">
+        <button type="button" data-toggle class="menu-icon"></button>
+        <div class="title-bar-title">Navigation</div>
       </div>
-      <!-- Location and account information-->
-      <div class="column large-6 medium-6 small-6">
-        <div class="float-right">
+      <div id="example-menu" class="top-bar">
+        <div class="top-bar-left">
+          <ul data-dropdown-menu class="dropdown menu">
+            <li class="menu-text show-for-large">
+              <p>Hello, <strong>USERNAME</strong></p>
+            </li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
           <ul class="menu">
             <!-- Location information-->
             <li><i class="fi-marker"></i>
@@ -31,6 +36,10 @@
             <!-- Account information-->
             <li><i class="fi-torso"></i>
               <button class="dropdown button">My Account</button>
+            </li>
+            <!-- Shopping cart ONLY FOR SMALL SCREEN-->
+            <li class="show-for-small-only"><i class="fi-shopping-cart"></i>
+              <button class="dropdown button">3 Item(s) - $578.14</button>
             </li>
           </ul>
         </div>
@@ -45,7 +54,7 @@
         <h1 class="logo">Ticket</h1>
       </div>
       <!-- Search Input-->
-      <div class="column large-7 medium-12 search-input">
+      <div class="column large-7 medium-9 search-input">
         <!-- Category select-->
         <div class="column large-4 medium-4 small-12">
           <select>
@@ -61,13 +70,13 @@
         </div>
       </div>
       <!-- Shopping Cart-->
-      <div class="column large-3 show-for-large shopping-cart">
-        <div class="column large-2">
+      <div class="column large-3 medium-3 show-for-medium shopping-cart">
+        <div class="column large-2 medium-4">
           <!-- Shopping Cart ICON-->
           <div class="cart"><img src="images/icon-shopping-cart.png" alt="Shopping Cart"></div>
         </div>
         <!-- Shopping cart information-->
-        <div class="column large-10">
+        <div class="column large-10 medium-8 shopping-text">
           <h4>Shopping Cart</h4>
           <p>3 Item (s) - $578.14</p>
         </div>
@@ -95,7 +104,7 @@
   <!-- Navigation-->
   <div class="full-navigation-row">
     <div class="row navigation-row">
-      <div class="column small-12 navigation">
+      <div class="column medium-12 show-for-medium navigation">
         <ul data-dropdown-menu class="dropdown menu float-right">
           <li class="show-for-large"><a href="" class="fi-list"><strong>Categories</strong></a></li>
           <li><a href="">Home</a></li>
@@ -124,7 +133,7 @@
       </div>
     </div>
   </div>
-  <div class="row left-categories">
+  <div class="row left-categories show-for-large">
     <div class="column large-2">
       <ul class="menu vertical">
             <li>
@@ -512,7 +521,7 @@
       
     </div>
     <!-- Right Side Images-->
-    <div class="column small-12 large-5 sports-images">
+    <div class="column medium-12 large-5 sports-images show-for-medium event-images">
       <div class="image-with-text"><img src="images/tickets-5.jpg" alt="Rugby">
             <!-- Image information, going on the image-->
             <div class="image-text-left">
@@ -534,7 +543,7 @@
     </div>
   </div>
   <!-- Sports Events with Pictures-->
-  <div class="row small-up-1 medium-up-3 large-up-5 sport-events-row">
+  <div class="row small-up-2 medium-up-3 large-up-5 sport-events-row">
         <!-- Sport event tab-->
         <div class="column sports">
           <!-- Image, text and button-->
@@ -593,37 +602,37 @@
   <div class="row recommended-row show-for-medium">
     <!-- Events-->
         <!-- Recommended event tab-->
-        <div class="column large-2 medium-2 recommended-tab"><img src="images/banner-1.png" alt="Chicago Bulls" class="float-center">
+        <div class="column large-2 medium-3 recommended-tab"><img src="images/banner-1.png" alt="Chicago Bulls" class="float-center">
           <h6 class="text-center">Chicago Bulls</h6>
           <!-- Star rating-->
           <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
         </div>
         <!-- Recommended event tab-->
-        <div class="column large-2 medium-2 recommended-tab"><img src="images/banner-2.png" alt="Chicago Backhawks" class="float-center">
+        <div class="column large-2 medium-3 recommended-tab"><img src="images/banner-2.png" alt="Chicago Backhawks" class="float-center">
           <h6 class="text-center">Chicago Backhawks</h6>
           <!-- Star rating-->
           <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
         </div>
         <!-- Recommended event tab-->
-        <div class="column large-2 medium-2 recommended-tab"><img src="images/banner-3.png" alt="Chicago Wolves" class="float-center">
+        <div class="column large-2 medium-3 recommended-tab"><img src="images/banner-3.png" alt="Chicago Wolves" class="float-center">
           <h6 class="text-center">Chicago Wolves</h6>
           <!-- Star rating-->
           <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
         </div>
         <!-- Recommended event tab-->
-        <div class="column large-2 medium-2 recommended-tab"><img src="images/banner-4.png" alt="CONCACAF Gold Cup" class="float-center">
+        <div class="column large-2 medium-3 recommended-tab"><img src="images/banner-4.png" alt="CONCACAF Gold Cup" class="float-center">
           <h6 class="text-center">CONCACAF Gold Cup</h6>
           <!-- Star rating-->
           <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
         </div>
         <!-- Recommended event tab-->
-        <div class="column large-2 medium-2 recommended-tab"><img src="images/banner-1.png" alt="Chicago Bulls" class="float-center">
+        <div class="column large-2 medium-3 recommended-tab"><img src="images/banner-1.png" alt="Chicago Bulls" class="float-center">
           <h6 class="text-center">Chicago Bulls</h6>
           <!-- Star rating-->
           <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
         </div>
         <!-- Recommended event tab-->
-        <div class="column large-2 medium-2 recommended-tab"><img src="images/banner-2.png" alt="Chicago Bulls" class="float-center">
+        <div class="column large-2 medium-3 recommended-tab"><img src="images/banner-2.png" alt="Chicago Bulls" class="float-center">
           <h6 class="text-center">Chicago Backhawks</h6>
           <!-- Star rating-->
           <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
@@ -684,7 +693,7 @@
   </div>
   <div class="row music-events-labels-row">
     <!-- Left Side Images-->
-    <div class="column small-12 large-5 sports-images-bottom">
+    <div class="column medium-12 large-5 sports-images-bottom show-for-medium event-images">
       <div class="image-with-text"><img src="images/music-5.jpg" alt="Hardwell">
             <!-- Image information, going on the image-->
             <div class="image-text-left">
@@ -858,66 +867,86 @@
     <div class="row information-tabs-row">
           <!-- Information tab (underneath the social media row)-->
           <div class="column large-3 medium-6 show-for-medium information-tab">
-            <!-- Left side image.-->
-            <div class="float-left">
-              <div class="ticket"><img src="images/icon-ticket.png" alt="Ticket"></div>
-            </div>
-            <!-- Right side text-->
-            <div class="float-right">
-              <h5>+15.000 Tickets</h5>
-              <p>Sports, Movies, etc.</p>
-            </div>
+            <ul class="menu">
+              <!-- Left side image.-->
+              <li>
+                <div class="ticket"><img src="images/icon-ticket.png" alt="Ticket"></div>
+              </li>
+              <!-- Right side text-->
+              <li>
+                <h5>+15.000 Tickets</h5>
+                <p>Sports, Movies, etc.</p>
+              </li>
+            </ul>
           </div>
           <!-- Information tab (underneath the social media row)-->
           <div class="column large-3 medium-6 show-for-medium information-tab">
-            <!-- Left side image.-->
-            <div class="float-left">
-              <div class="star"><img src="images/icon-star.png" alt="Star"></div>
-            </div>
-            <!-- Right side text-->
-            <div class="float-right">
-              <h5>More then 20 Categories</h5>
-              <p>Football, Rugby, Tennis</p>
-            </div>
+            <ul class="menu">
+              <!-- Left side image.-->
+              <li>
+                <div class="star"><img src="images/icon-star.png" alt="Star"></div>
+              </li>
+              <!-- Right side text-->
+              <li>
+                <h5>More then 20 Categories</h5>
+                <p>Football, Rugby, Tennis</p>
+              </li>
+            </ul>
           </div>
           <!-- Information tab (underneath the social media row)-->
           <div class="column large-3 medium-6 show-for-medium information-tab">
-            <!-- Left side image.-->
-            <div class="float-left">
-              <div class="shipping"><img src="images/icon-shipping.png" alt="Shipping"></div>
-            </div>
-            <!-- Right side text-->
-            <div class="float-right">
-              <h5>Free Shipping</h5>
-              <p>Free shipping on the world</p>
-            </div>
+            <ul class="menu">
+              <!-- Left side image.-->
+              <li>
+                <div class="shipping"><img src="images/icon-shipping.png" alt="Shipping"></div>
+              </li>
+              <!-- Right side text-->
+              <li>
+                <h5>Free Shipping</h5>
+                <p>Free shipping on the world</p>
+              </li>
+            </ul>
           </div>
           <!-- Information tab (underneath the social media row)-->
           <div class="column large-3 medium-6 show-for-medium information-tab">
-            <!-- Left side image.-->
-            <div class="float-left">
-              <div class="refund"><img src="images/icon-pig.png" alt="Refund"></div>
-            </div>
-            <!-- Right side text-->
-            <div class="float-right">
-              <h5>Refund in 2 days</h5>
-              <p>100% guarantee</p>
-            </div>
+            <ul class="menu">
+              <!-- Left side image.-->
+              <li>
+                <div class="refund"><img src="images/icon-pig.png" alt="Refund"></div>
+              </li>
+              <!-- Right side text-->
+              <li>
+                <h5>Refund in 2 days</h5>
+                <p>100% guarantee</p>
+              </li>
+            </ul>
           </div>
     </div>
     <footer>
       <div class="row">
         <!-- Logo and Free shipping information-->
-        <div class="column large-2"><img src="images/footer-logo.png" alt="Logo" class="footer-logo">
+        <div class="column large-2 medium-6 free-shipping"><img src="images/footer-logo.png" alt="Logo" class="footer-logo">
           <h5>Ticket Services</h5>
-          <div class="float-left"><img src="images/icon-delivery.png" alt="Delivery"></div>
-          <div class="float-right">
-            <h6>Free Shipping</h6>
-            <p>On All U.S. Orders</p>
+          <ul class="menu">
+            <li><img src="images/icon-delivery.png" alt="Delivery"></li>
+            <li>
+              <h6>Free Shipping</h6>
+              <p>On All U.S. Orders</p>
+            </li>
+          </ul>
+        </div>
+        <!-- Subscribe information FOR MEDIUM SCREEN-->
+        <div class="column large-3 medium-6 subscribe show-for-medium-only">
+          <h6>Subscribe Today</h6>
+          <p>and <span>save a 10%</span> on your next order</p>
+          <div class="input-group">
+            <input type="text" placeholder="Enter E-Mail" class="input-group-field">
+            <div class="input-group-button"><img src="images/icon-rightarrow.png" alt="Submit"></div>
           </div>
+          <p>I don't think... " then you<br>shouldn't talk, said the Hatter.</p>
         </div>
         <!-- Policies-->
-        <div class="column large-2 large-offset-1">
+        <div class="column large-2 large-offset-1 medium-4 policies">
           <ul class="menu vertical">
             <li>
               <h5>Policies</h5>
@@ -928,7 +957,7 @@
           </ul>
         </div>
         <!-- Account information-->
-        <div class="column large-2">
+        <div class="column large-2 medium-4 account">
           <ul class="menu vertical">
             <li>
               <h5>Account</h5>
@@ -941,7 +970,7 @@
           </ul>
         </div>
         <!-- Website information and necessary buttons-->
-        <div class="column large-2">
+        <div class="column large-2 medium-4 website-info">
           <ul class="menu vertical">
             <li>
               <h5>Website</h5>
@@ -953,8 +982,8 @@
             <li><a href="">Help</a></li>
           </ul>
         </div>
-        <!-- Subscribe information-->
-        <div class="column large-3">
+        <!-- Subscribe information FOR LARGE SCREEN-->
+        <div class="column large-3 show-for-large subscribe">
           <h6>Subscribe Today</h6>
           <p>and <span>save a 10%</span> on your next order</p>
           <div class="input-group">
@@ -964,7 +993,7 @@
           <p>I don't think... " then you<br>shouldn't talk, said the Hatter.</p>
         </div>
         <div class="column small-12">
-          <p class="footer-text">&copy; 2015 TICKET SERVICE. All rights reserved. CODE: PAULIUS KAŠIUBA, DESIGN: UNKNOWN</p>
+          <p class="footer-text">&copy; 2016 TICKET SERVICE. All rights reserved. CODE: PAULIUS KAŠIUBA, DESIGN: UNKNOWN</p>
         </div>
       </div>
     </footer>

@@ -17,14 +17,16 @@ body
     header
         .row
 
-            // Header text
-            .column.large-6.medium-6.small-6
-                p.show-for-medium Hello, <strong>USERNAME</strong>
-                h1.logo.show-for-small-only Ticket
+            .title-bar(data-responsive-toggle="example-menu", data-hide-for="medium")
+                button.menu-icon(type="button", data-toggle)
+                .title-bar-title Navigation
 
-            // Location and account information
-            .column.large-6.medium-6.small-6
-                .float-right
+            .top-bar#example-menu
+                .top-bar-left
+                    ul.dropdown.menu(data-dropdown-menu)
+                        li.menu-text.show-for-large: p Hello, <strong>USERNAME</strong>
+
+                .top-bar-right
                     ul.menu
 
                         // Location information
@@ -37,6 +39,12 @@ body
                             i.fi-torso
                             button.dropdown.button My Account
 
+                        // Shopping cart ONLY FOR SMALL SCREEN
+                        li.show-for-small-only
+                            i.fi-shopping-cart
+                            button.dropdown.button 3 Item(s) - $578.14
+
+
 
     // Logo, Search, Shopping Cart
     .full-searchbox-row
@@ -48,7 +56,7 @@ body
                 h1.logo Ticket
 
             // Search Input
-            .column.large-7.medium-12.search-input
+            .column.large-7.medium-9.search-input
 
                 // Category select
                 .column.large-4.medium-4.small-12
@@ -63,15 +71,15 @@ body
                     button.icon: i.fi-magnifying-glass
 
             // Shopping Cart
-            .column.large-3.show-for-large.shopping-cart
-                .column.large-2
+            .column.large-3.medium-3.show-for-medium.shopping-cart
+                .column.large-2.medium-4
 
                     // Shopping Cart ICON
                     .cart
                         img(src="images/icon-shopping-cart.png", alt="Shopping Cart")
 
                 // Shopping cart information
-                .column.large-10
+                .column.large-10.medium-8.shopping-text
                     h4 Shopping Cart
                     p 3 Item (s) - $578.14
 
@@ -118,7 +126,7 @@ body
 
         .row.navigation-row
 
-            .column.small-12.navigation
+            .column.medium-12.show-for-medium.navigation
                 ul.dropdown.menu.float-right(data-dropdown-menu)
                     li.show-for-large: a.fi-list(href=""): strong Categories
                     li: a(href="") Home
@@ -143,7 +151,7 @@ body
                     li.show-for-large: a.i-social-linkedin(href="") LinkedIn
 
 
-    .row.left-categories
+    .row.left-categories.show-for-large
 
         .column.large-2
             ul.menu.vertical
@@ -326,7 +334,7 @@ body
 
 
         // Right Side Images
-        .column.small-12.large-5.sports-images
+        .column.medium-12.large-5.sports-images.show-for-medium.event-images
 
             .image-with-text
                 img(src="images/tickets-5.jpg", alt="Rugby")
@@ -338,7 +346,7 @@ body
 
 
     // Sports Events with Pictures
-    .row.small-up-1.medium-up-3.large-up-5.sport-events-row
+    .row.small-up-2.medium-up-3.large-up-5.sport-events-row
         +sports-event("images/sports-1.jpg", "Lakers", "BMO Harris Bank Center", "L.A LAKERS VS HEAT", "SEE TICKET")
 
         +sports-event("images/sports-2.jpg", "Football", "Lisabon, Portugal", "Portugal vs Serbia EUR16", "SEE TICKET")
@@ -404,7 +412,7 @@ body
 
     .row.music-events-labels-row
         // Left Side Images
-        .column.small-12.large-5.sports-images-bottom
+        .column.medium-12.large-5.sports-images-bottom.show-for-medium.event-images
 
             .image-with-text
                 img(src="images/music-5.jpg", alt="Hardwell")
@@ -471,19 +479,32 @@ body
             .row
 
                 // Logo and Free shipping information
-                .column.large-2
+                .column.large-2.medium-6.free-shipping
                     img.footer-logo(src="images/footer-logo.png", alt="Logo")
                     h5 Ticket Services
 
-                    .float-left
-                        img(src="images/icon-delivery.png", alt="Delivery")
+                    ul.menu
+                        li
+                            img(src="images/icon-delivery.png", alt="Delivery")
 
-                    .float-right
-                        h6 Free Shipping
-                        p On All U.S. Orders
+                        li
+                            h6 Free Shipping
+                            p On All U.S. Orders
+
+                // Subscribe information FOR MEDIUM SCREEN
+                .column.large-3.medium-6.subscribe.show-for-medium-only
+                    h6 Subscribe Today
+                    p and <span>save a 10%</span> on your next order
+
+                    .input-group
+                        input.input-group-field(type="text", placeholder="Enter E-Mail")
+                        .input-group-button
+                            img(src="images/icon-rightarrow.png", alt="Submit")
+
+                    p I don't think... " then you<br>shouldn't talk, said the Hatter.
 
                 // Policies
-                .column.large-2.large-offset-1
+                .column.large-2.large-offset-1.medium-4.policies
                     ul.menu.vertical
                         li: h5 Policies
                         li: a(href="") Privacy Policy
@@ -491,7 +512,7 @@ body
                         li: a(href="") Shipping Policy
 
                 // Account information
-                .column.large-2
+                .column.large-2.medium-4.account
                     ul.menu.vertical
                         li: h5 Account
                         li: a(href="") Login
@@ -501,7 +522,7 @@ body
                         li: a(href="") Wishlist
 
                 // Website information and necessary buttons
-                .column.large-2
+                .column.large-2.medium-4.website-info
                     ul.menu.vertical
                         li: h5 Website
                         li: a(href="") Home
@@ -510,8 +531,8 @@ body
                         li: a(href="") Contact Us
                         li: a(href="") Help
 
-                // Subscribe information
-                .column.large-3
+                // Subscribe information FOR LARGE SCREEN
+                .column.large-3.show-for-large.subscribe
                     h6 Subscribe Today
                     p and <span>save a 10%</span> on your next order
 
@@ -523,7 +544,7 @@ body
                     p I don't think... " then you<br>shouldn't talk, said the Hatter.
 
                 .column.small-12
-                    p.footer-text &copy; 2015 TICKET SERVICE. All rights reserved. CODE: PAULIUS KAŠIUBA, DESIGN: UNKNOWN
+                    p.footer-text &copy; 2016 TICKET SERVICE. All rights reserved. CODE: PAULIUS KAŠIUBA, DESIGN: UNKNOWN
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
     script(src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js")
