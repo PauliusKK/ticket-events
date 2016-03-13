@@ -1,4 +1,209 @@
 @charset "UTF-8";
+@media screen and (max-width: 639px) {
+  .arrow-down-select, .calendar-select {
+    max-width: 200px !important;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .town-select {
+    min-width: 188px !important;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .shop-row .inputs .column:last-child {
+    width: 100% !important;
+  }
+  .hot-tickets .column:nth-child(2), .music-events-row .column:nth-child(2) {
+    margin-top: 25px !important;
+  }
+  .music-events-row .column:first-child {
+    margin-top: 30px;
+  }
+  .event-label-button p {
+    font-size: 12px !important;
+  }
+  .event-label {
+    display: none;
+  }
+  .event-label-small-screen {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    margin-top: 5.5px;
+  }
+  .event-label-small-screen .description h6 {
+    margin-top: 10px;
+    color: #2c3e52;
+    font-size: 15px;
+  }
+  .event-label-small-screen .description p {
+    color: #878787;
+    font-size: 14px;
+    margin-top: -5px;
+  }
+  .event-label-small-screen .date {
+    color: #2c3e52;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .event-label-small-screen .tab-button {
+    padding: 0;
+  }
+  .event-label-small-screen .calendar p {
+    font-size: 12px;
+    color: #757575;
+    margin-top: -10px;
+  }
+  .event-label-small-screen .tab-button {
+    margin-top: -40px;
+  }
+  .sports:nth-child(n+2) {
+    margin-top: 25px;
+  }
+  .menu-navigation-one {
+    display: none;
+  }
+  .bottom-background {
+    display: none;
+  }
+  .search-input .column:first-child {
+    display: none;
+  }
+  .top-bar-right ul {
+    margin-left: 0 !important;
+  }
+  header .top-bar .top-bar-right {
+    margin-top: -10px !important;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .top-bar-right {
+    width: 100%;
+  }
+  .top-bar-right ul {
+    margin-left: 25%;
+    display: inline-block;
+  }
+  .search-input {
+    padding: 0 1.5rem !important;
+    margin-bottom: 25px;
+  }
+  .shopping-cart {
+    padding: 0 !important;
+  }
+  .shopping-cart .shopping-text {
+    padding: 0 !important;
+  }
+  .search-input .column:first-child select {
+    background-image: none !important;
+  }
+  .navigation ul {
+    float: none !important;
+    text-align: center;
+    padding: 0;
+  }
+  .navigation ul li {
+    display: inline-block;
+    height: auto !important;
+  }
+  .navigation ul li a {
+    padding-left: 15px !important;
+  }
+  .navigation ul li a.contact-us {
+    padding-right: 0 !important;
+  }
+  .shop-row .inputs .column label.town-select select {
+    max-width: initial !important;
+  }
+  .shop-row .inputs .column:last-child {
+    width: 66.66%;
+  }
+  .shop-row {
+    margin-top: 30px;
+    border-right: none !important;
+    border-left: none !important;
+  }
+  .hot-tickets, .music-events-row {
+    margin-bottom: 20px !important;
+  }
+  .hot-tickets .column, .music-events-row .column {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .hot-tickets .column:nth-child(3), .hot-tickets .column:last-child, .music-events-row .column:nth-child(3), .music-events-row .column:last-child {
+    margin-top: 25px;
+  }
+  .sports-row {
+    margin-top: 20px !important;
+  }
+  .menu-navi {
+    padding: 0 0.5rem !important;
+  }
+  .sports-labels, .sports-labels-bottom {
+    padding: 0 0.5rem !important;
+  }
+  .event-label .calendar ul li img {
+    min-width: 27px;
+    min-height: 27px;
+  }
+  .sports:nth-child(n+4) {
+    display: none;
+  }
+  .sport-events-row {
+    padding: 0 0.5rem !important;
+  }
+  .sports p {
+    white-space: nowrap;
+  }
+  .sports img {
+    width: 100%;
+  }
+  .event-images {
+    display: none;
+  }
+  .recommended-row {
+    border-left: none !important;
+    border-right: none !important;
+  }
+  .recommended-tab:nth-child(n+5) {
+    display: none;
+  }
+  .recommended-tab {
+    padding: 0 1rem !important;
+    white-space: nowrap;
+  }
+  .social-media-tab {
+    padding: 0 0.5rem !important;
+    margin-top: 15px;
+  }
+  .social-media-tab:nth-child(3), .social-media-tab:last-child {
+    margin-top: 20px;
+  }
+  .information-tabs-row {
+    display: none;
+  }
+  footer {
+    text-align: center;
+    margin-top: 50px !important;
+  }
+  footer .free-shipping ul {
+    float: none !important;
+    text-align: center;
+    padding: 0;
+    margin-top: 25px !important;
+  }
+  footer .free-shipping ul li {
+    display: inline-block;
+  }
+  footer .free-shipping ul li p {
+    margin-right: 0 !important;
+  }
+  footer .subscribe .input-group {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .menu-navigation .float-left li {
   font-size: 21px;
   color: #303030;
@@ -389,134 +594,6 @@
 
 footer {
   margin-top: 70px;
-}
-
-@media screen and (max-width: 1023px) {
-  .top-bar-right {
-    width: 100%;
-  }
-  .top-bar-right ul {
-    margin-left: 25%;
-    display: inline-block;
-  }
-  .search-input {
-    padding: 0 1.5rem !important;
-    margin-bottom: 25px;
-  }
-  .shopping-cart {
-    padding: 0 !important;
-  }
-  .shopping-cart .shopping-text {
-    padding: 0 !important;
-  }
-  .search-input .column:first-child select {
-    background-image: none !important;
-  }
-  .navigation ul {
-    float: none !important;
-    text-align: center;
-    padding: 0;
-  }
-  .navigation ul li {
-    display: inline-block;
-    height: auto !important;
-  }
-  .navigation ul li a {
-    padding-left: 15px !important;
-  }
-  .navigation ul li a.contact-us {
-    padding-right: 0 !important;
-  }
-  .shop-row .inputs .column label.town-select select {
-    max-width: initial !important;
-  }
-  .shop-row .inputs .column:last-child {
-    width: 66.66%;
-  }
-  .shop-row {
-    margin-top: 30px;
-    border-right: none !important;
-    border-left: none !important;
-  }
-  .hot-tickets, .music-events-row {
-    margin-bottom: 20px !important;
-  }
-  .hot-tickets .column, .music-events-row .column {
-    padding-left: 0.5rem !important;
-    padding-right: 0.5rem !important;
-  }
-  .hot-tickets .column:nth-child(3), .hot-tickets .column:last-child, .music-events-row .column:nth-child(3), .music-events-row .column:last-child {
-    margin-top: 25px;
-  }
-  .sports-row {
-    margin-top: 20px !important;
-  }
-  .menu-navi {
-    padding: 0 0.5rem !important;
-  }
-  .sports-labels, .sports-labels-bottom {
-    padding: 0 0.5rem !important;
-  }
-  .event-label .calendar ul li img {
-    min-width: 27px;
-    min-height: 27px;
-  }
-  .sports:nth-child(n+4) {
-    display: none;
-  }
-  .sport-events-row {
-    padding: 0 0.5rem !important;
-  }
-  .sports p {
-    white-space: nowrap;
-  }
-  .sports img {
-    width: 100%;
-  }
-  .event-images {
-    display: none;
-  }
-  .recommended-row {
-    border-left: none !important;
-    border-right: none !important;
-  }
-  .recommended-tab:nth-child(n+5) {
-    display: none;
-  }
-  .recommended-tab {
-    padding: 0 1rem !important;
-    white-space: nowrap;
-  }
-  .social-media-tab {
-    padding: 0 0.5rem !important;
-    margin-top: 15px;
-  }
-  .social-media-tab:nth-child(3), .social-media-tab:last-child {
-    margin-top: 20px;
-  }
-  .information-tabs-row {
-    display: none;
-  }
-  footer {
-    text-align: center;
-    margin-top: 50px !important;
-  }
-  footer .free-shipping ul {
-    float: none !important;
-    text-align: center;
-    padding: 0;
-    margin-top: 25px !important;
-  }
-  footer .free-shipping ul li {
-    display: inline-block;
-  }
-  footer .free-shipping ul li p {
-    margin-right: 0 !important;
-  }
-  footer .subscribe .input-group {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 header {

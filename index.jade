@@ -26,7 +26,7 @@ body
                     ul.dropdown.menu(data-dropdown-menu)
                         li.menu-text.show-for-large: p Hello, <strong>USERNAME</strong>
 
-                .top-bar-right
+                .top-bar-right.show-for-medium
                     ul.menu
 
                         // Location information
@@ -43,6 +43,51 @@ body
                         li.show-for-small-only
                             i.fi-shopping-cart
                             button.dropdown.button 3 Item(s) - $578.14
+
+                .top-bar-right.show-for-small-only
+                    ul.menu.vertical
+
+                        // Location information
+                        li
+                            ul.menu
+                                li: i.fi-marker
+                                li: button.button Chicagoland & Northern IL
+
+                        // Account information
+                        li
+                            ul.menu
+                                li: i.fi-torso
+                                li: button.button My Account
+
+                        // Shopping cart
+                        li
+                            ul.menu
+                                li: i.fi-shopping-cart
+                                li: button.button 3 Item(s) - $578.14
+
+                        // Home
+                        li
+                            ul.menu
+                              li: i.fi-info
+                              li: button.button Home
+
+                        // Tickets
+                        li
+                            ul.menu
+                               li: i.fi-ticket
+                               li: button.button Tickets
+
+                        // Events
+                        li
+                            ul.menu
+                               li: i.fi-clipboard-notes
+                               li: button.button Events
+
+                        // Contact us
+                        li
+                            ul.menu
+                                li: i.fi-telephone
+                                li: button.button Contact Us
 
 
 
@@ -243,35 +288,35 @@ body
 
             // Select's START
             .column
-                label.arrow-down-select Select Category
+                label.arrow-down-select Select Category <br />
                     select
                         option Select
                         option Option 1
                         option Option 2
 
             .column
-                label.arrow-down-select Sub Category
+                label.arrow-down-select Sub Category <br />
                     select
                         option Select
                         option Option 1
                         option Option 2
 
             .column
-                label.calendar-select From
+                label.calendar-select From <br />
                     select
                         option 3/29/2015
                         option Option 2
                         option Option 3
 
             .column
-                label.calendar-select To
+                label.calendar-select To <br />
                     select
                         option 15/29/2015
                         option Option 2
                         option Option 3
 
             .column
-                label.town-select Town
+                label.town-select Town <br />
                     select
                         option Chicagoland & Northern IL
                         option Chicagoland & Northern IL
@@ -312,7 +357,7 @@ body
         // Close Button
         .column.small-12.large-7.sports-labels
             .primary.callout.event-label-button(data-closable)
-                p Recommender Sport Evenets past 5 Days
+                p Recommendet Sport Evenets past 5 Days
                 button.close-button(aria-label="Dismiss alert" type="button" data-close)
                     span(aria-hidden="true") &times;
 
@@ -333,6 +378,23 @@ body
             // Events END
 
 
+            // Events for small screen START
+
+            +sports-event-label-for-small-screen("14", "April", "Neil Diamond World Tour 2015", "United Center", "SEE TICKET")
+
+            +sports-event-label-for-small-screen("21", "April", "Chicago White Sox vs. Cleveland Indians", "U.S. Cellular Field", "SEE TICKET")
+
+            +sports-event-label-for-small-screen("26", "April", "Chicago Bulls v. TBD - Round 1 Home Game D", "United Center", "SEE TICKET")
+
+            +sports-event-label-for-small-screen("27", "April", "Bank of America Theatre", "U.S. Cellular Field", "SEE TICKET")
+
+            +sports-event-label-for-small-screen("29", "April", "Shania Twain Rock This Country Tour", "Allstate Arena", "SEE TICKET")
+
+            +sports-event-label-for-small-screen("30", "April", "One Direction: On The Road Again Tour 2015", "Soldier Field", "SEE TICKET")
+
+            // Events for small screen END
+
+
         // Right Side Images
         .column.medium-12.large-5.sports-images.show-for-medium.event-images
 
@@ -346,7 +408,7 @@ body
 
 
     // Sports Events with Pictures
-    .row.small-up-2.medium-up-3.large-up-5.sport-events-row
+    .row.small-up-1.medium-up-3.large-up-5.sport-events-row
         +sports-event("images/sports-1.jpg", "Lakers", "BMO Harris Bank Center", "L.A LAKERS VS HEAT", "SEE TICKET")
 
         +sports-event("images/sports-2.jpg", "Football", "Lisabon, Portugal", "Portugal vs Serbia EUR16", "SEE TICKET")
@@ -426,7 +488,7 @@ body
         // Close Button
         .column.small-12.large-7.sports-labels-bottom
             .primary.callout.event-label-button(data-closable)
-                p Recommender Sport Evenets past 5 Days
+                p Recommendet Sport Evenets past 5 Days
                 button.close-button(aria-label="Dismiss alert" type="button" data-close)
                     span(aria-hidden="true") &times;
 
@@ -445,6 +507,23 @@ body
             +sports-event-label("30", "April", "One Direction: On The Road Again Tour 2015", "Soldier Field", "SEE TICKET")
 
             // Events END
+
+
+            // Events for small screen START
+
+            +sports-event-label-for-small-screen("14", "April", "Neil Diamond World Tour 2015", "United Center", "SEE TICKET")
+
+            +sports-event-label-for-small-screen("21", "April", "Chicago White Sox vs. Cleveland Indians", "U.S. Cellular Field", "SEE TICKET")
+
+            +sports-event-label-for-small-screen("26", "April", "Chicago Bulls v. TBD - Round 1 Home Game D", "United Center", "SEE TICKET")
+
+            +sports-event-label-for-small-screen("27", "April", "Bank of America Theatre", "U.S. Cellular Field", "SEE TICKET")
+
+            +sports-event-label-for-small-screen("29", "April", "Shania Twain Rock This Country Tour", "Allstate Arena", "SEE TICKET")
+
+            +sports-event-label-for-small-screen("30", "April", "One Direction: On The Road Again Tour 2015", "Soldier Field", "SEE TICKET")
+
+            // Events for small screen END
 
 
     // Social Media

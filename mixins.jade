@@ -35,6 +35,24 @@ mixin sports-event-label(day, month, heading, stadium, button_text)
         .column.small-2.tab-button
             a.tiny.button.event-button(href="") #{button_text}
 
+mixin sports-event-label-for-small-screen(day, month, heading, stadium, button_text)
+
+    // Sports event label
+    .event.column.small-12.event-label-small-screen.show-for-small-only
+
+        // Description
+        .column.small-12.description
+            h6: strong #{heading}
+            p #{stadium}
+
+        // Calendar icon and date
+        .column.small-6.calendar
+            p #{day} #{month}
+
+        // Button
+        .column.small-6.tab-button
+            a.tiny.button.event-button(href="") #{button_text}
+
 mixin sports-event(src, alt, stadium, heading, button_text)
 
     // Sport event tab
@@ -115,7 +133,7 @@ mixin ticket(src, alt, heading, description, ButtonText)
 mixin social-media(src, alt, socialHeader, heading, about, description, ButtonText)
 
     // Social media tab
-    .column.large-3.medium-6.show-for-medium.social-media-tab
+    .column.large-3.medium-6.small-12.social-media-tab
         .social-media
             img(src=src, alt=alt)
             h6(class="#{socialHeader}") #{heading}

@@ -50,6 +50,7 @@ $text-social-hover: #1e1e1e
 $text-image-hover: #d7d7d7
 $text-main-image-hover: #1a6fac
 $text-currency: #aaaaaa
+$text-small-event-calendar: #757575
 
 
 // Social media color variables
@@ -69,14 +70,15 @@ $social-instagram: #3f160d
 
 // File imports START
 
+// Responsive
+@import "screen-small" // from 300px to 640px
+@import "screen-medium" // from 640px to 1024px
+
 // Main files
 @import "menu-navigation"
 @import "image-text"
 @import "rows-margins-paddings"
 // -----------------
-
-// Responsive
-@import "screen-medium" // from 640px to 1024px
 
 // Website sections
 @import "header"
