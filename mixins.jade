@@ -82,17 +82,18 @@ mixin sports-event-small-text(src, alt, stadium, heading, className, smallText, 
 mixin recommended-event(src, alt, heading)
 
     // Recommended event tab
-    .column.large-2.medium-3.recommended-tab
-        img.float-center(src=src, alt=alt)
-        h6.text-center #{heading}
+    li
+        .column.recommended-tab
+            img.float-center(src=src, alt=alt)
+            h6.text-center #{heading}
 
-        // Star rating
-        .rating
-            i.fi-star
-            i.fi-star
-            i.fi-star
-            i.fi-star
-            i.fi-star.inactive
+            // Star rating
+            .rating
+                i.fi-star
+                i.fi-star
+                i.fi-star
+                i.fi-star
+                i.fi-star.inactive
 
 mixin ticket-full-image(src, alt)
 
@@ -195,7 +196,7 @@ mixin photo-information-right(heading1, heading2, description, aText)
 
 mixin left-categories-label(src, ButtonText)
     li
-        ul.menu
-            li: .square: img(src=src, alt="")
-            li: a(href="") #{ButtonText}
-            li: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")
+        ul.menu.left-cat-menu
+            li.first: .square: img(src=src, alt="")
+            li.second: a(href="") #{ButtonText}
+            li.third: .right-square: img(src="images/icon-small-right-arrow.png", alt="Right Arrow")

@@ -64,6 +64,7 @@ h1.logo
 
 .shopping-cart
     margin-top: 40px
+    cursor: pointer
 
     h4
         color: $color-lightblue
@@ -95,21 +96,27 @@ h1.logo
         right: 0
         bottom: 0
 
-
-
 // Shopping items
 .shopping-info
-    background-color: white
     width: 290px
-    position: absolute
-    right: 220px
+    position: relative
     margin-top: 10px
-    z-index: 10
+    z-index: 11
+    left: -260px
+    top: 8px
     border-radius: 5px
-    border: 1px solid $color-borders
+    border-top: 1px solid $color-borders
     display: none
+    margin-left: 8px
 
-    ul
+    ul.menu
+        position: absolute
+        background-color: white
+        width: 290px
+        z-index: 12
+        border: 1px solid $color-borders
+        border-top: none
+        border-bottom: none
 
         li
             border-bottom: 1px solid $color-borders
@@ -187,6 +194,11 @@ h1.logo
                 float: right
                 padding: 10px 15px
                 background-color: $color-lightblue
+
+                &:active,
+                &:hover,
+                &:focus
+                    background-color: $color-checkout-hover
 
 
 .shopping-info:after, .shopping-info:before

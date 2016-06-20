@@ -4,12 +4,28 @@ html(lang="en")
         title Ticket Event
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1")
+
+        // START of LINKS
+
+        // Normalize.css
         link(ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
+
+        // Foundation and Foundation-icons CSS files.
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css")
+
+        // glDatePicker default styles.
+        link(rel="stylesheet", href="https://cdn.rawgit.com/glad/glDatePicker/master/styles/glDatePicker.default.css")
+
+        // Montserrat, Open Sans fonts.
         link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Montserrat:400,700")
         link(ref="stylesheet", type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic")
+
+        // Main style sheet.
         link(rel="stylesheet", href="style/style.css")
+
+        // END of LINKS
+
         include mixins
 
 body
@@ -36,8 +52,17 @@ body
 
                         // Account information
                         li
-                            i.fi-torso
-                            button.dropdown.button My Account
+                            button.content.dropdown.button My Account
+                                span.cog.octicon.octicon-gear
+                                .menu
+                                    a(href='#') Settings
+                                        span.icon.fi-widget
+                                    a(href='#') Web Statistics
+                                        span.icon.fi-graph-pie
+                                    a(href='#') Edit Users
+                                        span.icon.fi-torsos-all
+                                    a(href='#') Donate
+                                        span.icon.fi-paypal
 
                         // Shopping cart ONLY FOR SMALL SCREEN
                         li.show-for-small-only
@@ -128,43 +153,40 @@ body
                     h4 Shopping Cart
                     p 3 Item (s) - $578.14
 
-            .column.large-3
-                .shopping-info
-                    ul.menu.vertical
-                        li
-                            img(src="http://placehold.it/54x54", alt="Item")
-                            h6.item-name The Game Ticket
-                            span.item-quantity 1
-                            span.fi-x
-                            span.price-currency $
-                            span.item-price 54
-                            span.fi-x.close
+                    .shopping-info
+                        ul.menu.vertical
+                            li
+                                img(src="http://placehold.it/54x54", alt="Item")
+                                h6.item-name The Game Ticket
+                                span.item-quantity 1
+                                span.fi-x
+                                span.price-currency $
+                                span.item-price 54
+                                span.fi-x.close
 
-                        li
-                            img(src="http://placehold.it/54x54", alt="Item")
-                            h6.item-name Dillon Francis
-                            span.item-quantity 1
-                            span.fi-x
-                            span.price-currency $
-                            span.item-price 54
-                            span.fi-x.close
+                            li
+                                img(src="http://placehold.it/54x54", alt="Item")
+                                h6.item-name Dillon Francis
+                                span.item-quantity 1
+                                span.fi-x
+                                span.price-currency $
+                                span.item-price 54
+                                span.fi-x.close
 
-                        li
-                            img(src="http://placehold.it/54x54", alt="Item")
-                            h6.item-name Miami vs Cleavlend
-                            span.item-quantity 1
-                            span.fi-x
-                            span.price-currency $
-                            span.item-price 54
-                            span.fi-x.close
+                            li
+                                img(src="http://placehold.it/54x54", alt="Item")
+                                h6.item-name Miami vs Cleavlend
+                                span.item-quantity 1
+                                span.fi-x
+                                span.price-currency $
+                                span.item-price 54
+                                span.fi-x.close
 
-                        li.checkout
-                            span.subtotal Subtotal:
-                            span.price-currency $
-                            span.item-price 578.14
-                            button.tiny.button CHECKOUT
-
-
+                            li.checkout
+                                span.subtotal Subtotal:
+                                span.price-currency $
+                                span.item-price 578.14
+                                button.tiny.button CHECKOUT
 
     // Navigation
     .full-navigation-row
@@ -177,16 +199,16 @@ body
                     li: a(href="") Home
                     li.has-submenu
                         a(href="") Tickets
-                        ul.submenu.menu.vertical(data-submenu)
-                            li: a(href="") Item 1A
-                            li: a(href="") Item 1A
-                            li: a(href="") Item 1A
+                        ul.navigation-ul.submenu.menu.vertical(data-submenu)
+                            li.submenu-menu: a(href="") Item 1A
+                            li.submenu-menu: a(href="") Item 1A
+                            li.submenu-menu: a(href="") Item 1A
                     li.has-submenu
                         a(href="") Events
-                        ul.submenu.menu.vertical(data-submenu)
-                            li: a(href="") Item 1A
-                            li: a(href="") Item 1A
-                            li: a(href="") Item 1A
+                        ul.navigation-ul.submenu.menu.vertical(data-submenu)
+                            li.submenu-menu: a(href="") Item 1A
+                            li.submenu-menu: a(href="") Item 1A
+                            li.submenu-menu: a(href="") Item 1A
                     li: a(href="") Special Offers
                     li: a.contact-us(href="") Contact Us
                     li.show-for-large: a.i-arrow-right(href="") Arrow Right
@@ -198,22 +220,21 @@ body
 
     .row.left-categories.show-for-large
 
-        .column.large-2
-            ul.menu.vertical
-                +left-categories-label("images/icon-music.png", "Music")
-                +left-categories-label("images/icon-movies.png", "Movies")
-                +left-categories-label("images/icon-sport.png", "Sport")
-                +left-categories-label("images/icon-comedy.png", "Comedy")
-                +left-categories-label("images/icon-family.png", "Family")
-                +left-categories-label("images/icon-arts.png", "Arts")
-                +left-categories-label("images/icon-theatre.png", "Theatre")
-                +left-categories-label("images/icon-fashion.png", "Fashion")
-                +left-categories-label("images/icon-food.png", "Food")
+        .column.large-12.show-for-large.main-pictures
+            ul.menu
+                li
+                    ul.menu.vertical
+                        +left-categories-label("images/icon-music.png", "Music")
+                        +left-categories-label("images/icon-movies.png", "Movies")
+                        +left-categories-label("images/icon-sport.png", "Sport")
+                        +left-categories-label("images/icon-comedy.png", "Comedy")
+                        +left-categories-label("images/icon-family.png", "Family")
+                        +left-categories-label("images/icon-arts.png", "Arts")
+                        +left-categories-label("images/icon-theatre.png", "Theatre")
+                        +left-categories-label("images/icon-fashion.png", "Fashion")
+                        +left-categories-label("images/icon-food.png", "Food")
 
-
-        .column.large-10.show-for-large.main-pictures
-            ul.menu.float-right
-                li.main-image.float-left
+                li.main-image
                     img(src="images/slider-1.jpg", alt="Dillon Francis")
 
                     // Image information, going on the image
@@ -231,41 +252,43 @@ body
 
                         p.image-a: a(href="") <br>Get It Now!
 
-                li.main-image-2
-                        img(src="images/slider-2.jpg", alt="The Game")
+                li
+                    ul.menu.vertical
+                        li.main-image-2
+                            img(src="images/slider-2.jpg", alt="The Game")
 
-                        // Image information, going on the image
-                        .image-text-main-2
-                            h3 The Game  Tour
-                            h4 December 2015
+                            // Image information, going on the image
+                            .image-text-main-2
+                                h3 The Game  Tour
+                                h4 December 2015
 
-                            .rating
-                                i.fi-star
-                                i.fi-star
-                                i.fi-star
-                                i.fi-star
-                                i.fi-star.inactive
-                                a(href="") (53)
+                                .rating
+                                    i.fi-star
+                                    i.fi-star
+                                    i.fi-star
+                                    i.fi-star
+                                    i.fi-star.inactive
+                                    a(href="") (53)
 
-                            p.image-a: a(href="") <br>Get It Now!
+                                p.image-a: a(href="") <br>Get It Now!
 
-                li.main-image-3.float-left
-                        img(src="images/slider-3.jpg", alt="Miami vs Cleavlend CL")
+                        li.main-image-3
+                                img(src="images/slider-3.jpg", alt="Miami vs Cleavlend CL")
 
-                        // Image information, going on the image
-                        .image-text-main-3
-                            h3 Miami vs Cleavlend CL
-                            h4 Medison Square
+                                // Image information, going on the image
+                                .image-text-main-3
+                                    h3 Miami vs Cleavlend CL
+                                    h4 Medison Square
 
-                            .rating
-                                i.fi-star
-                                i.fi-star
-                                i.fi-star
-                                i.fi-star
-                                i.fi-star.inactive
-                                a(href="") (53)
+                                    .rating
+                                        i.fi-star
+                                        i.fi-star
+                                        i.fi-star
+                                        i.fi-star
+                                        i.fi-star.inactive
+                                        a(href="") (53)
 
-                            p.image-a: a(href="") <br>Get It Now!
+                                    p.image-a: a(href="") <br>Get It Now!
 
 
 
@@ -303,17 +326,11 @@ body
 
             .column
                 label.calendar-select From <br />
-                    select
-                        option 3/29/2015
-                        option Option 2
-                        option Option 3
+                    input#calendar(type="text", value="")
 
             .column
                 label.calendar-select To <br />
-                    select
-                        option 15/29/2015
-                        option Option 2
-                        option Option 3
+                    input#calendar2(type="text")
 
             .column
                 label.town-select Town <br />
@@ -437,20 +454,25 @@ body
 
     .row.recommended-row.show-for-medium
         // Events
-        +recommended-event("images/banner-1.png", "Chicago Bulls", "Chicago Bulls")
+        ul.rec-ul
 
-        +recommended-event("images/banner-2.png", "Chicago Backhawks", "Chicago Backhawks")
+            +recommended-event("images/banner-1.png", "Chicago Bulls", "Chicago Bulls")
 
-        +recommended-event("images/banner-3.png", "Chicago Wolves", "Chicago Wolves")
+            +recommended-event("images/banner-2.png", "Chicago Backhawks", "Chicago Backhawks")
 
-        +recommended-event("images/banner-4.png", "CONCACAF Gold Cup", "CONCACAF Gold Cup")
+            +recommended-event("images/banner-3.png", "Chicago Wolves", "Chicago Wolves")
 
-        +recommended-event("images/banner-1.png", "Chicago Bulls", "Chicago Bulls")
+            +recommended-event("images/banner-4.png", "CONCACAF Gold Cup", "CONCACAF Gold Cup")
 
-        +recommended-event("images/banner-2.png", "Chicago Bulls", "Chicago Backhawks")
+            +recommended-event("images/banner-1.png", "Chicago Bulls", "Chicago Bulls")
 
-        .arrow
-            img(src="images/icon-rec-arrow.png", alt="Show")
+            +recommended-event("images/banner-2.png", "Chicago Bulls", "Chicago Backhawks")
+
+            +recommended-event("images/banner-1.png", "Chicago Bulls", "Chicago Bulls")
+
+            +recommended-event("images/banner-2.png", "Chicago Backhawks", "Chicago Backhawks")
+
+            +recommended-event("images/banner-3.png", "Chicago Wolves", "Chicago Wolves")
 
 
     // Music navigation menu
@@ -625,6 +647,16 @@ body
                 .column.small-12
                     p.footer-text &copy; 2016 TICKET SERVICE. All rights reserved. CODE: PAULIUS KAŠIUBA, DESIGN: UNKNOWN
 
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
-    script(src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js")
-    script(src="js.js")
+    // JQUERY, JQUERY-EASING, FOUNDATION
+    script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+    script(type="text/javascript", src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js")
+
+    // DATE PICKER
+    script(src="https://cdn.rawgit.com/glad/glDatePicker/master/glDatePicker.min.js")
+
+    // SLY PLUGIN
+    script(type="text/javascript", src="https://cdn.rawgit.com/darsain/sly/master/dist/sly.min.js")
+
+    // MAIN JS FILE
+    script(src="js/main.min.js")
