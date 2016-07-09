@@ -669,7 +669,7 @@ header .top-bar .top-bar-right ul li .content {
   position: relative;
 }
 
-header .top-bar .top-bar-right ul li .content .menu {
+header .top-bar .top-bar-right ul li .menu {
   top: 30px;
   position: absolute;
   z-index: 10;
@@ -677,7 +677,7 @@ header .top-bar .top-bar-right ul li .content .menu {
   display: none;
 }
 
-header .top-bar .top-bar-right ul li .content .menu a {
+header .top-bar .top-bar-right ul li .menu a {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
   display: block;
@@ -691,46 +691,46 @@ header .top-bar .top-bar-right ul li .content .menu a {
   text-align: left;
 }
 
-header .top-bar .top-bar-right ul li .content .menu a:nth-child(2) {
+header .top-bar .top-bar-right ul li .menu a:nth-child(2) {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-header .top-bar .top-bar-right ul li .content .menu a:last-child {
+header .top-bar .top-bar-right ul li .menu a:last-child {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-header .top-bar .top-bar-right ul li .content .menu a:hover {
+header .top-bar .top-bar-right ul li .menu a:hover {
   color: #555555;
 }
 
-header .top-bar .top-bar-right ul li .content .menu a .icon {
+header .top-bar .top-bar-right ul li .menu a .icon {
   float: right;
   font-size: 20px;
   color: #919191;
   opacity: 0.8;
 }
 
-header .top-bar .top-bar-right ul li .content .menu a .icon:hover,
-header .top-bar .top-bar-right ul li .content .menu a .icon:active,
-header .top-bar .top-bar-right ul li .content .menu a .icon:focus {
+header .top-bar .top-bar-right ul li .menu a .icon:hover,
+header .top-bar .top-bar-right ul li .menu a .icon:active,
+header .top-bar .top-bar-right ul li .menu a .icon:focus {
   color: #555555;
 }
 
-header .top-bar .top-bar-right ul li .content .menu a .icon.fi-widget {
+header .top-bar .top-bar-right ul li .menu a .icon.fi-widget {
   margin-right: 11px;
 }
 
-header .top-bar .top-bar-right ul li .content .menu a .icon.fi-graph-pie {
+header .top-bar .top-bar-right ul li .menu a .icon.fi-graph-pie {
   margin-right: 12px;
 }
 
-header .top-bar .top-bar-right ul li .content .menu a .icon.fi-torsos-all {
+header .top-bar .top-bar-right ul li .menu a .icon.fi-torsos-all {
   margin-right: 11px;
 }
 
-header .top-bar .top-bar-right ul li .content .menu a .icon.fi-paypal {
+header .top-bar .top-bar-right ul li .menu a .icon.fi-paypal {
   margin-right: 15px;
 }
 
